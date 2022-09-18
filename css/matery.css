@@ -1,3 +1,8 @@
+:root {
+  --bcg-color-1: #212121;
+  --bcg-color-2: #6b6a6a;
+}
+
 /*全局基础样式*/
 /*小屏幕下(手机类)的样式*/
 @media only screen and (max-width: 601px) {
@@ -241,7 +246,8 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #212121 0%, #6b6a6a 100%);
+    background-image: linear-gradient(to right, var(--bcg-color-1) 0%, var(--bcg-color-2) 100%);
+    backdrop-filter: blur(20px);
      
 }
 
@@ -258,7 +264,7 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background: linear-gradient(to right, var(--bcg-color-1) 0%, var(--bcg-color-2) 100%);
     opacity: 0.8;
 }
 

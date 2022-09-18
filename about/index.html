@@ -78,7 +78,7 @@
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
       
-      <span>Index</span>
+      <span>Home</span>
     </a>
     
   </li>
@@ -132,11 +132,11 @@
       <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
     </a>
   </li>
-  <!-- <li>
+  <li>
     <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
       <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
     </a>
-  </li> -->
+  </li>
 </ul>
 
 
@@ -162,7 +162,7 @@
 			
 			    <i class="fa-fw fas fa-home"></i>
 			
-			Index
+			Home
 		</a>
           
         </li>
@@ -291,7 +291,17 @@
 
 
 
+<div class="statis">
+    <span class="count"><a href="/categories">1</a></span>
+    <span class="name">Categories</span>
+</div>
 
+
+
+<div class="statis">
+    <span class="count"><a href="/tags">2</a></span>
+    <span class="name">Tags</span>
+</div>
 
 
                     </div>
@@ -311,7 +321,17 @@
 
 
 
+<div class="statis">
+    <span class="count"><a href="/categories">1</a></span>
+    <span class="name">Categories</span>
+</div>
 
+
+
+<div class="statis">
+    <span class="count"><a href="/tags">2</a></span>
+    <span class="name">Tags</span>
+</div>
 
 
                                 </div>
@@ -491,7 +511,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [],
+                data: [{"name":"front-end","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -515,7 +535,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: []
+                data: ["a","b"]
             }
         ],
         yAxis: [
@@ -528,7 +548,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [],
+                data: [1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -696,6 +716,18 @@
     <div class="other-skills chip-container" data-aos="zoom-in-up">
         <div class="sub-title center-align"><i class="fa fa-book"></i>&nbsp;&nbsp;otherSkills</div>
         <div class="tag-chips center-align">
+            
+            
+            <a href="/tags/a/">
+                <span class="chip center-align waves-effect waves-light chip-default">a</span>
+            </a>
+            
+            
+            
+            <a href="/tags/b/">
+                <span class="chip center-align waves-effect waves-light chip-default">b</span>
+            </a>
+            
             
         </div>
     </div>
@@ -1043,6 +1075,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300,"right":300},"mobile":{"show":false},"react":{"opacity":0.9}});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"react":{"opacity":0.9}});</script></body>
 
 </html>
