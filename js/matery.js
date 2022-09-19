@@ -136,7 +136,7 @@ $(function () {
     });
 
     function showOrHideNavBg(position) {
-        let showPosition = 400;
+        let showPosition = 350;
         if (position < showPosition) {
             $nav.addClass('nav-transparent');
             

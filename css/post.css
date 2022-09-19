@@ -1,3 +1,9 @@
+:root {
+  --bcg-color-1: #212121;
+  --bcg-color-2: #6b6a6a;
+}
+
+
 #articleContent h1::before,
 #articleContent h2::before,
 #articleContent h3::before,
@@ -51,7 +57,7 @@
 }
 
 #toc-content .toc-link:hover {
-    color: #42b983;
+    color: var(--bcg-color-1);
     font-weight: 700;
     text-decoration: underline;
 }
@@ -66,7 +72,7 @@
 }
 
 #toc-content .is-active-link {
-    color: #42b983;
+    color: var(--bcg-color-1);
 }
 
 #floating-toc-btn {
