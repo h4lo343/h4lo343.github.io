@@ -44,6 +44,9 @@ body {
   color: #34495e;
   overflow-x: hidden;
   overflow-y: auto;
+  background-image: url("../medias/background/3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 h1 {
