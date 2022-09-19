@@ -44,7 +44,7 @@ body {
     color: #34495e;
     overflow-x: hidden;
     overflow-y: auto;
-    background-image: url("https://cdn.jsdelivr.net/gh/h4lo343/blog_cdn@v1.2/img/4.jpg");
+    background-image: url("../medias/background/3.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
