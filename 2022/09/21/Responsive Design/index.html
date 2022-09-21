@@ -4,8 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Front-end Study Checklist, h4lo343">
-    <meta name="description" content="Front-end Study Checklist">
+    <meta name="keywords" content="Responsive_Design, h4lo343">
+    <meta name="description" content="Media Query
+&amp;#x3D;&amp;#x3D;Difference between max- and min-&amp;#x3D;&amp;#x3D;
+​	EX: min-width: 400px: take effect when screen siz">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Front-end Study Checklist | h4lo343</title>
+    <title>Responsive_Design | h4lo343</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -310,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.gif')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.gif')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Front-end Study Checklist</h1>
+                    <h1 class="description center-align post-title">Responsive_Design</h1>
                 </div>
             </div>
         </div>
@@ -343,8 +345,12 @@
                                 <span class="chip bg-color">front-end</span>
                             </a>
                         
-                            <a href="/tags/javascript/">
-                                <span class="chip bg-color">javascript</span>
+                            <a href="/tags/responsive/">
+                                <span class="chip bg-color">responsive</span>
+                            </a>
+                        
+                            <a href="/tags/css/">
+                                <span class="chip bg-color">css</span>
                             </a>
                         
                     </div>
@@ -368,7 +374,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-09-20
+                    2022-09-21
                 </div>
                 
 
@@ -382,14 +388,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    30
+                    486
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    3 Min
                 </div>
                 
 
@@ -409,13 +415,27 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>[ ] Javascript deep copy</p>
-<p>[ ] Promise(implement from bottom), async</p>
-<p>[ ] implement map from reduce </p>
-<p>[ ] prototype chain</p>
-<p>[ ] Javascript closure, high-order function, this problem </p>
-<p>[ ] from input URL to rendering  webpage</p>
-<p>[ ] Javascript memory leakage</p>
+                <h3 id="Media-Query"><a href="#Media-Query" class="headerlink" title="Media Query"></a>Media Query</h3><hr>
+<p>&#x3D;&#x3D;Difference between max- and min-&#x3D;&#x3D;</p>
+<p>​	<strong>EX:</strong> min-width: 400px: take effect when screen size is 400px or larger</p>
+<p>​		   max-width: 400px: take effect when screen size is 400px or smaller</p>
+<h4 id="Use-media-query-to-set-different-back-ground-color-to-the-body"><a href="#Use-media-query-to-set-different-back-ground-color-to-the-body" class="headerlink" title="Use media query to set different back ground color to the body:"></a>Use media query to set different back ground color to the body:</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: lightblue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">min-width</span>: <span class="number">400px</span>) &#123;</span><br><span class="line">  <span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: lightgreen;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">min-width</span>: <span class="number">800px</span>) &#123;</span><br><span class="line">  <span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: lavender;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="Responsive-navigation-menu-vertical-on-small-screens-："><a href="#Responsive-navigation-menu-vertical-on-small-screens-：" class="headerlink" title="Responsive navigation menu (vertical on small screens)："></a>Responsive navigation menu (vertical on small screens)：</h4> <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span>: <span class="number">600px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.topnav</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">    <span class="attribute">float</span>: none;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp">W3School</a></p>
+</blockquote>
+<h4 id="An-Example-of-a-More-Complex-Responsive-Navibar"><a href="#An-Example-of-a-More-Complex-Responsive-Navibar" class="headerlink" title="An Example of a More Complex Responsive Navibar:"></a>An Example of a More Complex Responsive Navibar:</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="selector-tag">body</span> &#123;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">margin</span>: <span class="number">0</span>;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">font-family</span>: Arial, Helvetica, sans-serif;</span></span><br><span class="line"><span class="language-css">&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="selector-class">.topnav</span> &#123;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">overflow</span>: hidden;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">background-color</span>: <span class="number">#333</span>;</span></span><br><span class="line"><span class="language-css">&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="selector-class">.topnav</span> <span class="selector-tag">a</span> &#123;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">float</span>: left;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">display</span>: block;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">color</span>: <span class="number">#f2f2f2</span>;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">text-align</span>: center;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">padding</span>: <span class="number">14px</span> <span class="number">16px</span>;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">text-decoration</span>: none;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">font-size</span>: <span class="number">17px</span>;</span></span><br><span class="line"><span class="language-css">&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="selector-class">.topnav</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">background-color</span>: <span class="number">#ddd</span>;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">color</span>: black;</span></span><br><span class="line"><span class="language-css">&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="selector-class">.topnav</span> <span class="selector-tag">a</span><span class="selector-class">.active</span> &#123;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">background-color</span>: <span class="number">#04AA6D</span>;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">color</span>: white;</span></span><br><span class="line"><span class="language-css">&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="selector-class">.topnav</span> <span class="selector-class">.icon</span> &#123;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">display</span>: none;</span></span><br><span class="line"><span class="language-css">&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span>: <span class="number">600px</span>) &#123;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.topnav</span> <span class="selector-tag">a</span><span class="selector-pseudo">:not</span>(<span class="selector-pseudo">:first</span>-child) &#123;<span class="attribute">display</span>: none;&#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.topnav</span> <span class="selector-tag">a</span><span class="selector-class">.icon</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">float</span>: right;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">display</span>: block;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span>: <span class="number">600px</span>) &#123;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.topnav</span><span class="selector-class">.responsive</span> &#123;<span class="attribute">position</span>: relative;&#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.topnav</span><span class="selector-class">.responsive</span> <span class="selector-class">.icon</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">position</span>: absolute;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">right</span>: <span class="number">0</span>;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">top</span>: <span class="number">0</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">  <span class="selector-class">.topnav</span><span class="selector-class">.responsive</span> <span class="selector-tag">a</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">float</span>: none;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">display</span>: block;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">text-align</span>: left;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css">&#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;topnav&quot;</span> <span class="attr">id</span>=<span class="string">&quot;myTopnav&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#home&quot;</span> <span class="attr">class</span>=<span class="string">&quot;active&quot;</span>&gt;</span>Home<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#news&quot;</span>&gt;</span>News<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#contact&quot;</span>&gt;</span>Contact<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#about&quot;</span>&gt;</span>About<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;javascript:void(0);&quot;</span> <span class="attr">class</span>=<span class="string">&quot;icon&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;myFunction()&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa fa-bars&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;padding-left:16px&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h2</span>&gt;</span>Responsive Topnav Example<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>Resize the browser window to see how it works.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript"><span class="keyword">function</span> <span class="title function_">myFunction</span>(<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">  <span class="keyword">var</span> x = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;myTopnav&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">  <span class="keyword">if</span> (x.<span class="property">className</span> === <span class="string">&quot;topnav&quot;</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">    x.<span class="property">className</span> += <span class="string">&quot; responsive&quot;</span>;</span></span><br><span class="line"><span class="language-javascript">  &#125; <span class="keyword">else</span> &#123;</span></span><br><span class="line"><span class="language-javascript">    x.<span class="property">className</span> = <span class="string">&quot;topnav&quot;</span>;</span></span><br><span class="line"><span class="language-javascript">  &#125;</span></span><br><span class="line"><span class="language-javascript">&#125;</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp">W3School</a></p>
+</blockquote>
+<p><strong>Result:</strong></p>
+<p><img src="/../imgs/Responsive%20Design/image-20220921164455908.png" alt="Small Screen"></p>
+<p> <img src="/../imgs/Responsive%20Design/image-20220921164437682.png" alt="Small Screen"></p>
 
                 
             </div>
@@ -442,7 +462,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/09/20/Front-end%20Study%20Checklist/">http://example.com/2022/09/20/Front-end%20Study%20Checklist/</a>
+                    <a href="http://example.com/2022/09/21/Responsive%20Design/">http://example.com/2022/09/21/Responsive%20Design/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -484,8 +504,12 @@
                                     <span class="chip bg-color">front-end</span>
                                 </a>
                             
-                                <a href="/tags/javascript/">
-                                    <span class="chip bg-color">javascript</span>
+                                <a href="/tags/responsive/">
+                                    <span class="chip bg-color">responsive</span>
+                                </a>
+                            
+                                <a href="/tags/css/">
+                                    <span class="chip bg-color">css</span>
                                 </a>
                             
                         </div>
@@ -798,9 +822,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2022/09/21/Responsive%20Design/">
                     <div class="card-image">
@@ -818,9 +843,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-09-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -833,6 +858,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -859,31 +885,31 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/09/19/Acknowledge/">
+                <a href="/2022/09/20/Front-end%20Study%20Checklist/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.gif" class="responsive-img" alt="Acknowledgement">
+                        <img src="/medias/featureimages/0.gif" class="responsive-img" alt="Front-end Study Checklist">
                         
-                        <span class="card-title">Acknowledgement</span>
+                        <span class="card-title">Front-end Study Checklist</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            To Those Who Indirectly Helped Me in Making This Blog
+                            Front-end Study Checklist
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-20
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Miscellaneous/" class="post-category">
-                                    Miscellaneous
+                            <a href="/categories/Self-Study/" class="post-category">
+                                    Self-Study
                                 </a>
                             
                             
@@ -893,12 +919,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/acknowledgment/">
-                        <span class="chip bg-color">acknowledgment</span>
+                    <a href="/tags/front-end/">
+                        <span class="chip bg-color">front-end</span>
                     </a>
                     
-                    <a href="/tags/blog/">
-                        <span class="chip bg-color">blog</span>
+                    <a href="/tags/javascript/">
+                        <span class="chip bg-color">javascript</span>
                     </a>
                     
                 </div>
