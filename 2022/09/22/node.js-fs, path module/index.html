@@ -440,43 +440,43 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Js-DOM-BOM-and-Browser"><a href="#Js-DOM-BOM-and-Browser" class="headerlink" title="Js, DOM, BOM and Browser"></a>Js, DOM, BOM and Browser</h2><p>Each browser has APIs connected to DOM and BOM objects on the pages so that Js could use them to operate on DOM and BOM</p>
+                <h2 id="Js-DOM-BOM-and-Browser"><a href="#Js-DOM-BOM-and-Browser" class="headerlink" title="Js, DOM, BOM and Browser"></a>Js, DOM, BOM and Browser</h2><p>Each browser has APIs connected to DOM and BOM objects on the pages so that Js could use them to operate on DOM and BOM：</p>
 <p><img src="/../imgs/node.js%20Study_9-22/image-20220922133047690.png"></p>
-<p>JS Environment in Chrome Browser</p>
+<p>JS Environment in Chrome Browser：</p>
 <p><img src="/../imgs/node.js%20Study_9-22/image-20220922133559751.png"></p>
-<p>JS Environment in Node.js </p>
+<p>JS Environment in Node.js：</p>
 <p><img src="/../imgs/node.js%20Study_9-22/image-20220922134027600.png"></p>
-<h2 id="fs-Module"><a href="#fs-Module" class="headerlink" title="fs Module"></a>fs Module</h2><h3 id="fs-readFile"><a href="#fs-readFile" class="headerlink" title="fs.readFile()"></a>fs.readFile()</h3><p>method parameters (default format is UTF-8) </p>
+<h2 id="fs-Module"><a href="#fs-Module" class="headerlink" title="fs Module"></a>fs Module</h2><h3 id="fs-readFile"><a href="#fs-readFile" class="headerlink" title="fs.readFile()"></a>fs.readFile()</h3><p>method parameters (default format is UTF-8):</p>
 <p><img src="/../imgs/node.js%20Study_9-22/image-20220922134846677.png"></p>
-<p>example: read file in UTF-8 format, print error(if successful, error &#x3D;&#x3D; null) or data</p>
+<p>example: read file in UTF-8 format, print error(if successful, error &#x3D;&#x3D; null) or data:</p>
 <p><img src="/../imgs/node.js%20Study_9-22/image-20220922134951451.png"></p>
 <h3 id="fs-write"><a href="#fs-write" class="headerlink" title="fs.write()"></a>fs.write()</h3><p><strong>fs.write can only create file can’t create directory</strong> </p>
-<p>method parameters</p>
+<p>method parameters:</p>
 <p><img src="/../imgs/node.js%20Study_9-22/image-20220922135342086.png"></p>
-<p>example</p>
+<p>example:</p>
 <p><img src="/../imgs/node.js%20Study_9-22/image-20220922135538469.png"></p>
-<h3 id="Combined-Example"><a href="#Combined-Example" class="headerlink" title="Combined Example"></a>Combined Example</h3><p>read data in a file, edit and store them in a new file</p>
+<h3 id="Combined-Example"><a href="#Combined-Example" class="headerlink" title="Combined Example"></a>Combined Example</h3><p>read data in a file, edit and store them in a new file:</p>
 <p><img src="/../imgs/node.js%20Study_9-22/image-20220922140250170.png"></p>
 <p>​					<img src="/../imgs/node.js%20Study_9-22/image-20220922140415663.png"></p>
-<h2 id="Relative-Path-Problem"><a href="#Relative-Path-Problem" class="headerlink" title="Relative Path Problem"></a>Relative Path Problem</h2><p>in node.js, the relative path is positioned via the directory where the node command is executed but not the directory of the executed Js file</p>
+<h2 id="Relative-Path-Problem"><a href="#Relative-Path-Problem" class="headerlink" title="Relative Path Problem"></a>Relative Path Problem</h2><p>in node.js, the relative path is positioned via the directory where the node command is executed but not the directory of the executed Js file:</p>
 <p><img src="/../imgs/node.js%20Study_9-22/image-20220922141154423.png" alt="image-20220922141154423"></p>
-<h3 id="dirname"><a href="#dirname" class="headerlink" title="__dirname"></a>__dirname</h3><p>in node.js, __dirname is a variable stores the absolute path of the current Js file </p>
+<h3 id="dirname"><a href="#dirname" class="headerlink" title="__dirname"></a>__dirname</h3><p>in node.js, __dirname is a variable stores the absolute path of the current Js file:</p>
 <p><img src="/../imgs/node.js%20Study_9-22/image-20220922141907587.png"></p>
-<h4 id="Use-dirname-to-solve-the-relative-path-problem"><a href="#Use-dirname-to-solve-the-relative-path-problem" class="headerlink" title="Use __dirname to solve the relative path problem"></a>Use __dirname to solve the relative path problem</h4><p><img src="/../imgs/node.js%20Study_9-22/image-20220922142055259.png"></p>
+<h4 id="Use-dirname-to-solve-the-relative-path-problem"><a href="#Use-dirname-to-solve-the-relative-path-problem" class="headerlink" title="Use __dirname to solve the relative path problem:"></a>Use __dirname to solve the relative path problem:</h4><p><img src="/../imgs/node.js%20Study_9-22/image-20220922142055259.png"></p>
 <h2 id="Path-Module"><a href="#Path-Module" class="headerlink" title="Path Module"></a>Path Module</h2><p><strong>path.join()</strong>: join multiple path string into a complete path string</p>
 <p><strong>path.basename()</strong>: return filename string from a path string</p>
 <h3 id="path-join"><a href="#path-join" class="headerlink" title="path.join()"></a>path.join()</h3><p><strong>use path.join() to replace + because the method could resolve ‘.&#x2F;‘ and ‘..&#x2F;‘ in path name</strong></p>
-<p>method parameters</p>
+<p>method parameters:</p>
 <p><img src="/../imgs/node.js%20Study_9-22/image-20220922142654256.png"></p>
-<p>example(<strong>attention to ‘..&#x2F;‘ and ‘.&#x2F;‘</strong>) </p>
+<p>example(<strong>attention to ‘..&#x2F;‘ and ‘.&#x2F;‘</strong>):</p>
 <p><img src="/../imgs/node.js%20Study_9-22/image-20220922142722426.png"></p>
-<h3 id="path-basename"><a href="#path-basename" class="headerlink" title="path.basename()"></a>path.basename()</h3><p>method parameters</p>
+<h3 id="path-basename"><a href="#path-basename" class="headerlink" title="path.basename()"></a>path.basename()</h3><p>method parameters:</p>
 <p><img src="/../imgs/node.js%20Study_9-22/image-20220922143201426.png"></p>
-<p>example</p>
+<p>example:</p>
 <p><img src="/../imgs/node.js%20Study_9-22/image-20220922143253916.png"></p>
-<h3 id="path-extname"><a href="#path-extname" class="headerlink" title="path.extname"></a>path.extname</h3><p>method parameters</p>
+<h3 id="path-extname"><a href="#path-extname" class="headerlink" title="path.extname"></a>path.extname</h3><p>method parameters:</p>
 <p><img src="/../imgs/node.js%20Study_9-22/image-20220922143658558.png"></p>
-<p>example</p>
+<p>example:</p>
 <p><img src="/../imgs/node.js%20Study_9-22/image-20220922143714028.png"></p>
 
                 
@@ -872,9 +872,9 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.gif" class="responsive-img" alt="node.js-http module">
+                        <img src="/medias/featureimages/2.gif" class="responsive-img" alt="node.js-http, url module, npm publish">
                         
-                        <span class="card-title">node.js-http module</span>
+                        <span class="card-title">node.js-http, url module, npm publish</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
