@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="node.js-express, h4lo343">
-    <meta name="description" content="">
+    <meta name="keywords" content="node.js-Express Basic, h4lo343">
+    <meta name="description" content="Introduction to expressexpress could facilitate development of both Web server and API server, it is a packaged module o">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>node.js-express | h4lo343</title>
+    <title>node.js-Express Basic | h4lo343</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.gif')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.gif')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">node.js-express</h1>
+                    <h1 class="description center-align post-title">node.js-Express Basic</h1>
                 </div>
             </div>
         </div>
@@ -417,7 +417,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    0
+                    126
                 </div>
                 
 
@@ -444,7 +444,20 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h2 id="Introduction-to-express"><a href="#Introduction-to-express" class="headerlink" title="Introduction to express"></a>Introduction to express</h2><p>express could facilitate development of both <strong>Web server</strong> and <strong>API server</strong>, it is a packaged module of node.js http module</p>
+<h2 id="Simple-use-of-express"><a href="#Simple-use-of-express" class="headerlink" title="Simple use of express"></a>Simple use of express</h2><p><img src="/../imgs/node.js-express/image-20220922213839625.png"></p>
+<h2 id="Get-and-post-in-express"><a href="#Get-and-post-in-express" class="headerlink" title="Get and post in express"></a>Get and post in express</h2><p><img src="/../imgs/node.js-express/image-20220922223702354.png"></p>
+<h2 id="Static-server-in-express"><a href="#Static-server-in-express" class="headerlink" title="Static server in express"></a>Static server in express</h2><pre class="line-numbers language-javascript"><code class="language-javascript">app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>express<span class="token punctuation">.</span><span class="token keyword">static</span><span class="token punctuation">(</span><span class="token string">'public'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>to declare public as a source for static server, express will look for css, html and js files under this directory and <strong>&#x2F;public will not appear in url</strong></p>
+<p>declare multiple static servers, express would look for static resources from top to bottom and return the first matched ones</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>express<span class="token punctuation">.</span><span class="token keyword">static</span><span class="token punctuation">(</span><span class="token string">'public1'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>express<span class="token punctuation">.</span><span class="token keyword">static</span><span class="token punctuation">(</span><span class="token string">'public2'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>add url prefix to a static server, anyone who want to access resources under public have to add prefix ‘&#x2F;user’</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'/user'</span><span class="token punctuation">,</span> express<span class="token punctuation">.</span><span class="token keyword">static</span><span class="token punctuation">(</span><span class="token string">'public'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
                 
             </div>
             <hr/>
@@ -843,9 +856,9 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.gif" class="responsive-img" alt="node.js-express">
+                        <img src="/medias/featureimages/3.gif" class="responsive-img" alt="node.js-Express Basic">
                         
-                        <span class="card-title">node.js-express</span>
+                        <span class="card-title">node.js-Express Basic</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
