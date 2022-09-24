@@ -21,7 +21,7 @@
 /*大屏幕下(桌面类)的样式*/
 @media only screen and (min-width: 993px) {
   .container {
-      width: 90%;
+      width: 100%;
       max-width: 1125px;
   }
 
@@ -69,7 +69,7 @@ h2::after {
   position: absolute;
   content: "";
   bottom: -11px;
-  left: 0;
+  left: -1px;
   display: block;
   height: 3rem;
   width: 4px;
@@ -78,10 +78,22 @@ h2::after {
 }
 
 h3 {
+  position: relative;
   margin: 38px 0 15px -4px;
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 1.7rem;
+}
+h3::after {
+  position: absolute;
+  content: "";
+  bottom: -1px;
+  left: -3px;
+  display: block;
+  height: 1.7rem;
+  width: 4px;
+  border-radius: 3px;
+  background-color: var( --bcg-color-1)
 }
 
 h4 {
