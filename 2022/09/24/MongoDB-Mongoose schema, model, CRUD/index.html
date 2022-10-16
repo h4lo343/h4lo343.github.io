@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Dotenv Tool, Joe">
-    <meta name="description" content="A useful tool to access .env">
+    <meta name="keywords" content="MongoDB-Mongoose-schema, model, CRUD, Joe">
+    <meta name="description" content="The self-study note for MongoDB">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Dotenv Tool | Joe</title>
+    <title>MongoDB-Mongoose-schema, model, CRUD | Joe</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.gif')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.gif')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Dotenv Tool</h1>
+                    <h1 class="description center-align post-title">MongoDB-Mongoose-schema, model, CRUD</h1>
                 </div>
             </div>
         </div>
@@ -366,16 +366,16 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/javascript/">
-                                <span class="chip bg-color">javascript</span>
+                            <a href="/tags/mongoDB/">
+                                <span class="chip bg-color">mongoDB</span>
                             </a>
                         
-                            <a href="/tags/back-end/">
-                                <span class="chip bg-color">back-end</span>
+                            <a href="/tags/database/">
+                                <span class="chip bg-color">database</span>
                             </a>
                         
-                            <a href="/tags/front-end/">
-                                <span class="chip bg-color">front-end</span>
+                            <a href="/tags/mongoose/">
+                                <span class="chip bg-color">mongoose</span>
                             </a>
                         
                     </div>
@@ -386,8 +386,8 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Tools/" class="post-category">
-                                Tools
+                            <a href="/categories/Self-Study/" class="post-category">
+                                Self-Study
                             </a>
                         
                     </div>
@@ -406,21 +406,21 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-09-25
+                    2022-10-16
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    105
+                    387
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    2 Min
                 </div>
                 
 
@@ -440,25 +440,131 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Dotenv"><a href="#Dotenv" class="headerlink" title="Dotenv"></a>Dotenv</h2><h3 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h3><p>dotenv is a tool helps us to access variables in .env file in anywhere under the project.</p>
-<h3 id="In-nodejs"><a href="#In-nodejs" class="headerlink" title="In nodejs"></a>In nodejs</h3><h4 id="installation"><a href="#installation" class="headerlink" title="installation"></a>installation</h4><pre><code>npm install dotenv --save
-</code></pre>
-<h4 id="import-and-use-it-under-app-js"><a href="#import-and-use-it-under-app-js" class="headerlink" title="import and use it under app.js"></a>import and use it under app.js</h4><pre><code>require(&#39;dotenv&#39;).config()
-console.log(process.env)
-</code></pre>
-<p><strong>once the dotenv is imported under the most top file (app.js), no need to require it in other files. Directly use the syntax:</strong></p>
-<pre><code>process.env.[variable.name]
-</code></pre>
-<p><strong>to access the variable</strong></p>
-<h3 id="in-react"><a href="#in-react" class="headerlink" title="in react"></a>in react</h3><h4 id="installatation"><a href="#installatation" class="headerlink" title="installatation"></a>installatation</h4><pre><code>npm install react-dotenv
-</code></pre>
-<h4 id="import-and-use"><a href="#import-and-use" class="headerlink" title="import and use"></a>import and use</h4><pre><code>import React from &quot;react&quot;;
-import env from &quot;react-dotenv&quot;;
+                <h2 id="Defining-Schema"><a href="#Defining-Schema" class="headerlink" title="Defining Schema"></a>Defining Schema</h2><h3 id="An-example"><a href="#An-example" class="headerlink" title="An example"></a>An example</h3><p>the key a property could have: <strong>type, required, unique, default, enum, trim, minlength, maxlength, min, max, validate</strong></p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">import</span> mongoose <span class="token keyword">from</span> <span class="token string">'mongoose'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> Schema <span class="token punctuation">}</span> <span class="token operator">=</span> mongoose<span class="token punctuation">;</span>
 
-export function MyComponent() &#123;
-  return &lt;div&gt;&#123;env.API_URL&#125;&lt;/div&gt;;
-&#125;
-</code></pre>
+<span class="token keyword">const</span> blogSchema <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span>  String<span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// String is shorthand for {type: String}</span>
+  author<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> string<span class="token punctuation">,</span> required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> unique<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span>
+  gender<span class="token punctuation">:</span> <span class="token punctuation">{</span>type： string<span class="token punctuation">,</span> <span class="token keyword">enum</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'female'</span><span class="token punctuation">,</span> <span class="token string">'male'</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+  body<span class="token punctuation">:</span>   String<span class="token punctuation">,</span>
+  comments<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> body<span class="token punctuation">:</span> String<span class="token punctuation">,</span> date<span class="token punctuation">:</span> Date <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  date<span class="token punctuation">:</span> <span class="token punctuation">{</span> type<span class="token punctuation">:</span> Date<span class="token punctuation">,</span> <span class="token keyword">default</span><span class="token punctuation">:</span> Date<span class="token punctuation">.</span>now<span class="token punctuation">}</span><span class="token punctuation">,</span>
+  hidden<span class="token punctuation">:</span> Boolean<span class="token punctuation">,</span>
+  meta<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    votes<span class="token punctuation">:</span> Number<span class="token punctuation">,</span>
+    favs<span class="token punctuation">:</span>  Number
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="validate-and-required-key"><a href="#validate-and-required-key" class="headerlink" title="validate and required key"></a>validate and required key</h4><p>requried:</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">onst breakfastSchema <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  eggs<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> Number<span class="token punctuation">,</span>
+    min<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token string">'Too few eggs'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    max<span class="token punctuation">:</span> <span class="token number">12</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  bacon<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> Number<span class="token punctuation">,</span>
+    required<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token string">'Why no bacon?'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  drink<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+    <span class="token keyword">enum</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'Coffee'</span><span class="token punctuation">,</span> <span class="token string">'Tea'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    required<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>bacon <span class="token operator">></span> <span class="token number">3</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="Permitted-schema-types"><a href="#Permitted-schema-types" class="headerlink" title="Permitted schema types"></a>Permitted schema types</h3><p><a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/schematypes.html#strings">String</a></p>
+<p><a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/schematypes.html#numbers">Number</a></p>
+<p><a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/schematypes.html#dates">Date</a></p>
+<p><a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/schematypes.html#buffers">Buffer</a></p>
+<p><a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/schematypes.html#booleans">Boolean</a></p>
+<p><a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/schematypes.html#mixed">Mixed</a></p>
+<p><a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/schematypes.html#objectids">ObjectId</a></p>
+<p><a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/schematypes.html#arrays">Array</a></p>
+<p><a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/api.html#mongoose_Mongoose-Decimal128">Decimal128</a></p>
+<p><a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/schematypes.html#maps">Map</a></p>
+<h3 id="Schema-methods"><a href="#Schema-methods" class="headerlink" title="Schema methods"></a>Schema methods</h3><p><a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/api.html#Schema">Schema methods</a></p>
+<h2 id="Validation-in-schema"><a href="#Validation-in-schema" class="headerlink" title="Validation in schema"></a>Validation in schema</h2><h3 id="Pass-a-function-to-the-required"><a href="#Pass-a-function-to-the-required" class="headerlink" title="Pass a function to the required"></a>Pass a function to the required</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> breakfastSchema <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  eggs<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> Number<span class="token punctuation">,</span>
+    min<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token string">'Too few eggs'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    max<span class="token punctuation">:</span> <span class="token number">12</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  bacon<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> Number<span class="token punctuation">,</span>
+    required<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token string">'Why no bacon?'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  drink<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+    <span class="token keyword">enum</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'Coffee'</span><span class="token punctuation">,</span> <span class="token string">'Tea'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    required<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>bacon <span class="token operator">></span> <span class="token number">3</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="Use-the-validate"><a href="#Use-the-validate" class="headerlink" title="Use the validate"></a>Use the validate</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> userSchema <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  phone<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+    validate<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      validator<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token regex">/\d{3}-\d{3}-\d{4}/</span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      message<span class="token punctuation">:</span> props <span class="token operator">=</span><span class="token operator">></span> <span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>props<span class="token punctuation">.</span>value<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> is not a valid phone number!`</span></span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    required<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token string">'User phone number required'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="Custom-error-messages"><a href="#Custom-error-messages" class="headerlink" title="Custom error messages"></a>Custom error messages</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> breakfastSchema <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  eggs<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> Number<span class="token punctuation">,</span>
+    min<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token string">'Must be at least 6, got {VALUE}'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    max<span class="token punctuation">:</span> <span class="token number">12</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  drink<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+    <span class="token keyword">enum</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      values<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'Coffee'</span><span class="token punctuation">,</span> <span class="token string">'Tea'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      message<span class="token punctuation">:</span> <span class="token string">'{VALUE} is not supported'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Model"><a href="#Model" class="headerlink" title="Model"></a>Model</h2><h3 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h3><p><a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/api.html#model-js">Models</a> are fancy constructors compiled from <code>Schema</code> definitions. An instance of a model is called a <a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/documents.html">document</a>. Models are responsible for creating and reading documents from the underlying MongoDB database.</p>
+<h3 id="Create-a-model-based-on-a-schema"><a href="#Create-a-model-based-on-a-schema" class="headerlink" title="Create a model based on a schema"></a>Create a model based on a schema</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> Blog <span class="token operator">=</span> mongoose<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">'Blog'</span><span class="token punctuation">,</span> blogSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="Document"><a href="#Document" class="headerlink" title="Document"></a>Document</h3><p>An instance of a model is called a <a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/documents.html">document</a>. Creating them and saving to the database is easy.</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> Tank <span class="token operator">=</span> mongoose<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">'Tank'</span><span class="token punctuation">,</span> yourSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> small <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Tank</span><span class="token punctuation">(</span><span class="token punctuation">{</span> size<span class="token punctuation">:</span> <span class="token string">'small'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+small<span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token function">handleError</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment" spellcheck="true">// saved!</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// or</span>
+
+Tank<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span> size<span class="token punctuation">:</span> <span class="token string">'small'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>err<span class="token punctuation">,</span> small<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token function">handleError</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment" spellcheck="true">// saved!</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// or, for inserting large batches of documents</span>
+Tank<span class="token punctuation">.</span><span class="token function">insertMany</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">{</span> size<span class="token punctuation">:</span> <span class="token string">'small'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Each model is associated with a connection (mongoose.model() use the default connection), if want to create a model on another connection, use:</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">const</span> connection <span class="token operator">=</span> mongoose<span class="token punctuation">.</span><span class="token function">createConnection</span><span class="token punctuation">(</span><span class="token string">'mongodb://localhost:27017/test'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> Tank <span class="token operator">=</span> connection<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">'Tank'</span><span class="token punctuation">,</span> yourSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="RUD"><a href="#RUD" class="headerlink" title="RUD"></a>RUD</h2><p><a target="_blank" rel="noopener" href="https://mongoosejs.com/docs/queries.html">https://mongoosejs.com/docs/queries.html</a></p>
 
                 
             </div>
@@ -485,7 +591,7 @@ export function MyComponent() &#123;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://h4lo343.github.io/2022/09/24/Dotenv%20Tool/">https://h4lo343.github.io/2022/09/24/Dotenv%20Tool/</a>
+                    <a href="https://h4lo343.github.io/2022/09/24/MongoDB-Mongoose%20schema,%20model,%20CRUD/">https://h4lo343.github.io/2022/09/24/MongoDB-Mongoose%20schema,%20model,%20CRUD/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -523,16 +629,16 @@ export function MyComponent() &#123;
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/javascript/">
-                                    <span class="chip bg-color">javascript</span>
+                                <a href="/tags/mongoDB/">
+                                    <span class="chip bg-color">mongoDB</span>
                                 </a>
                             
-                                <a href="/tags/back-end/">
-                                    <span class="chip bg-color">back-end</span>
+                                <a href="/tags/database/">
+                                    <span class="chip bg-color">database</span>
                                 </a>
                             
-                                <a href="/tags/front-end/">
-                                    <span class="chip bg-color">front-end</span>
+                                <a href="/tags/mongoose/">
+                                    <span class="chip bg-color">mongoose</span>
                                 </a>
                             
                         </div>
@@ -849,82 +955,25 @@ export function MyComponent() &#123;
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/09/24/MongoDB-Mongoose%20schema,%20model,%20CRUD/">
+                <a href="/2022/10/14/Set%20absolute%20path%20in%20React%20project/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.gif" class="responsive-img" alt="MongoDB-Mongoose-schema, model, CRUD">
+                        <img src="/medias/featureimages/3.gif" class="responsive-img" alt="Set absolute path in React project">
                         
-                        <span class="card-title">MongoDB-Mongoose-schema, model, CRUD</span>
+                        <span class="card-title">Set absolute path in React project</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            The self-study note for MongoDB
+                            
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-09-24
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-10-14
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Self-Study/" class="post-category">
-                                    Self-Study
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/mongoDB/">
-                        <span class="chip bg-color">mongoDB</span>
-                    </a>
-                    
-                    <a href="/tags/database/">
-                        <span class="chip bg-color">database</span>
-                    </a>
-                    
-                    <a href="/tags/mongoose/">
-                        <span class="chip bg-color">mongoose</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/09/23/node.js-Express%20Routing%20and%20Middleware/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/1.gif" class="responsive-img" alt="node.js-Express Routing, Middleware, CORS">
-                        
-                        <span class="card-title">node.js-Express Routing, Middleware, CORS</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            The notes for slef-studying node.js
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-23
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -948,20 +997,65 @@ export function MyComponent() &#123;
                         <span class="chip bg-color">front-end</span>
                     </a>
                     
-                    <a href="/tags/node-js/">
-                        <span class="chip bg-color">node.js</span>
+                    <a href="/tags/react/">
+                        <span class="chip bg-color">react</span>
                     </a>
                     
-                    <a href="/tags/express/">
-                        <span class="chip bg-color">express</span>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/09/24/Dotenv%20Tool/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/4.gif" class="responsive-img" alt="Dotenv Tool">
+                        
+                        <span class="card-title">Dotenv Tool</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            A useful tool to access .env
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-24
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Tools/" class="post-category">
+                                    Tools
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/javascript/">
+                        <span class="chip bg-color">javascript</span>
                     </a>
                     
-                    <a href="/tags/router/">
-                        <span class="chip bg-color">router</span>
+                    <a href="/tags/back-end/">
+                        <span class="chip bg-color">back-end</span>
                     </a>
                     
-                    <a href="/tags/middleware/">
-                        <span class="chip bg-color">middleware</span>
+                    <a href="/tags/front-end/">
+                        <span class="chip bg-color">front-end</span>
                     </a>
                     
                 </div>
