@@ -4,12 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Advanced CSS&amp;Sass 04, Joe">
-    <meta name="description" content="choose direct children element
-VS
-choose all elements below
-
-Use background-blend-mode:this attribute only takes effect ">
+    <meta name="keywords" content="Advanced CSS&amp;Sass 03 - background-clip, outline and flipping card, Joe">
+    <meta name="description" content="background-clip and transparent coloruse the combination of: 
+background-image:  url(../../img/hero.jpg);
+-webkit-backgr">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +19,7 @@ Use background-blend-mode:this attribute only takes effect ">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Advanced CSS&amp;Sass 04 | Joe</title>
+    <title>Advanced CSS&amp;Sass 03 - background-clip, outline and flipping card | Joe</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -315,12 +313,12 @@ Use background-blend-mode:this attribute only takes effect ">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.gif')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.gif')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Advanced CSS&amp;Sass 04</h1>
+                    <h1 class="description center-align post-title">Advanced CSS&amp;Sass 03 - background-clip, outline and flipping card</h1>
                 </div>
             </div>
         </div>
@@ -403,7 +401,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-12-01
+                    2022-11-29
                 </div>
                 
 
@@ -417,7 +415,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    28
+                    169
                 </div>
                 
 
@@ -444,17 +442,65 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="choose-direct-children-element"><a href="#choose-direct-children-element" class="headerlink" title="choose direct children element"></a>choose direct children element</h2><p><img src="/../imgs/Advanced%20CSS&Sass%2003%20-%20background-clip%20and%20outline%20-%20%E5%89%AF%E6%9C%AC/image-20221129233627145.png"></p>
-<p><strong>VS</strong></p>
-<p>choose all elements below</p>
-<p><img src="/../imgs/Advanced%20CSS&Sass%2003%20-%20background-clip%20and%20outline%20-%20%E5%89%AF%E6%9C%AC/image-20221129233651555.png"></p>
-<h2 id="Use-background-blend-mode"><a href="#Use-background-blend-mode" class="headerlink" title="Use background-blend-mode:"></a>Use <code>background-blend-mode:</code></h2><p><strong>this attribute only takes effect when there is more than 1 background images piled together</strong></p>
-<p><img src="/../imgs/Advanced%20CSS&Sass%2003%20-%20background-clip%20and%20outline%20-%20%E5%89%AF%E6%9C%AC/image-20221201152058743.png"></p>
-<p><img src="/../imgs/Advanced%20CSS&Sass%2003%20-%20background-clip%20and%20outline%20-%20%E5%89%AF%E6%9C%AC/image-20221201152106289.png"></p>
-<p><img src="/../imgs/Advanced%20CSS&Sass%2003%20-%20background-clip%20and%20outline%20-%20%E5%89%AF%E6%9C%AC/image-20221201152117913.png"></p>
-<p><img src="/../imgs/Advanced%20CSS&Sass%2003%20-%20background-clip%20and%20outline%20-%20%E5%89%AF%E6%9C%AC/image-20221201152128632.png"></p>
-<p><img src="/../imgs/Advanced%20CSS&Sass%2003%20-%20background-clip%20and%20outline%20-%20%E5%89%AF%E6%9C%AC/image-20221201152203490.png"></p>
-<p><img src="/../imgs/Advanced%20CSS&Sass%2003%20-%20background-clip%20and%20outline%20-%20%E5%89%AF%E6%9C%AC/image-20221201152214390.png"></p>
+                <h2 id="background-clip-and-transparent-color"><a href="#background-clip-and-transparent-color" class="headerlink" title="background-clip and transparent color"></a>background-clip and transparent color</h2><p>use the combination of: </p>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token property">background-image</span><span class="token punctuation">:</span>  <span class="token url">url(../../img/hero.jpg)</span><span class="token punctuation">;</span>
+<span class="token property">-webkit-background-clip</span><span class="token punctuation">:</span> text<span class="token punctuation">;</span>
+<span class="token property">color</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>to make background image as text：</p>
+<p><img src="/../imgs/Advanced%20CSS&Sass%2003/image-20221129141131015.png"></p>
+<h2 id="in-emmet-use-lorem-to-generate-meaningless-place-holder"><a href="#in-emmet-use-lorem-to-generate-meaningless-place-holder" class="headerlink" title="in emmet, use lorem to generate meaningless place holder"></a>in emmet, use lorem to generate meaningless place holder</h2><p><img src="/../imgs/Advanced%20CSS&Sass%2003/image-20221129144810457.png"></p>
+<h2 id="Make-clicking-a-button-more-dynamic-use-shadow-and-transform"><a href="#Make-clicking-a-button-more-dynamic-use-shadow-and-transform" class="headerlink" title="Make clicking a button more dynamic - use shadow and transform"></a>Make clicking a button more dynamic - use shadow and transform</h2><p><strong>eg1:</strong></p>
+<p><img src="/../imgs/Advanced%20CSS&Sass%2003/image-20221129154427631.png"></p>
+<p><strong>eg2:</strong></p>
+<p><img src="/../imgs/Advanced%20CSS&Sass%2003/image-20221129154448640.png"></p>
+<h3 id="When-father-elements-use-rem-children-elements-could-use"><a href="#When-father-elements-use-rem-children-elements-could-use" class="headerlink" title="When father elements use rem, children elements could use %"></a>When father elements use rem, children elements could use %</h3><h2 id="Outline-vs-Border"><a href="#Outline-vs-Border" class="headerlink" title="Outline vs Border"></a>Outline vs Border</h2><p><img src="/../imgs/Advanced%20CSS&Sass%2003/image-20221129161457769.png"></p>
+<p>! outline does not <strong>effect surrounding elements</strong> and does not <strong>take up space</strong></p>
+<h2 id="Make-the-flipping-card-with-different-content-on-each-side"><a href="#Make-the-flipping-card-with-different-content-on-each-side" class="headerlink" title="Make the flipping card with different content on each side"></a>Make the flipping card with different content on each side</h2><pre class="line-numbers language-css"><code class="language-css"><span class="token selector"><span class="token class">.card</span> </span><span class="token punctuation">{</span>
+  <span class="token selector">perspective: 150rem;
+
+  height: 50rem;
+  position: relative;
+
+
+  &amp;__side </span><span class="token punctuation">{</span>
+    <span class="token selector">height: 50rem;
+    color: <span class="token id">#fff</span>;
+    font-size: 2rem;
+    transition: all <span class="token class">.8s</span> ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1<span class="token class">.5rem</span> 4rem rgba($color-black, <span class="token class">.15</span>);
+
+    &amp;--front </span><span class="token punctuation">{</span>
+      <span class="token property">background-color</span><span class="token punctuation">:</span> $color-white<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">&amp;--back </span><span class="token punctuation">{</span>
+      <span class="token selector">background-color: green;
+      transform: rotateY(180deg);
+
+      &amp;-1 </span><span class="token punctuation">{</span>
+        <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>to right bottom, $color-secondary-light, $color-secondary-dark<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">&amp;<span class="token pseudo-class">:hover</span> &amp;__side--front</span><span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotateY</span><span class="token punctuation">(</span><span class="token number">180</span>deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">&amp;<span class="token pseudo-class">:hover</span> &amp;__side--back</span><span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotateY</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -481,7 +527,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://h4lo343.github.io/2022/12/01/Advanced%20CSS&Sass%2004/">https://h4lo343.github.io/2022/12/01/Advanced%20CSS&Sass%2004/</a>
+                    <a href="https://h4lo343.github.io/2022/11/29/Advanced%20CSS&Sass%2003%20-%20background-clip%20and%20outline%20-%20%E5%89%AF%E6%9C%AC/">https://h4lo343.github.io/2022/11/29/Advanced%20CSS&Sass%2003%20-%20background-clip%20and%20outline%20-%20%E5%89%AF%E6%9C%AC/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -841,18 +887,17 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/12/01/Advanced%20CSS&Sass%2004/">
+                <a href="/2022/12/01/Advanced%20CSS&Sass%2004%20-%20background-blend-mode,%20object-fit%20and%20video/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.gif" class="responsive-img" alt="Advanced CSS&amp;Sass 04">
+                        <img src="/medias/featureimages/6.gif" class="responsive-img" alt="Advanced CSS&amp;Sass 04 - background-blend-mode, object-fit and video">
                         
-                        <span class="card-title">Advanced CSS&amp;Sass 04</span>
+                        <span class="card-title">Advanced CSS&amp;Sass 04 - background-blend-mode, object-fit and video</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -862,9 +907,9 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-01
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-12-01
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -877,7 +922,6 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -904,13 +948,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/11/29/Advanced%20CSS&Sass%2003%20-%20background-clip%20and%20outline/">
+                <a href="/2022/11/26/Advanced%20CSS&Sass%2002%20-%20BEM,%20Basic%20Sass/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.gif" class="responsive-img" alt="Advanced CSS&amp;Sass 03 - background-clip, outline and flipping card">
+                        <img src="/medias/featureimages/4.gif" class="responsive-img" alt="Advanced CSS&amp;Sass 02 - BEM, Basic Sass">
                         
-                        <span class="card-title">Advanced CSS&amp;Sass 03 - background-clip, outline and flipping card</span>
+                        <span class="card-title">Advanced CSS&amp;Sass 02 - BEM, Basic Sass</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -921,7 +965,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-11-29
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-11-26
                             </span>
                         <span class="publish-author">
                             
