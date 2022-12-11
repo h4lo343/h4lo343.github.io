@@ -4,11 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Advanced CSS&amp;Sass 07, Joe">
-    <meta name="description" content="max- and min- width in media query
-Breakpoint
-
-unit in media queryrem and em in media query would not be effected by our">
+    <meta name="keywords" content="Advanced CSS&amp;Sass 08 - Responsive image, Joe">
+    <meta name="description" content="Responsive imagehttps://www.jianshu.com/p/607567e488fc
+what is responsive imagedisplay different versions of the same im">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +18,7 @@ unit in media queryrem and em in media query would not be effected by our">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Advanced CSS&amp;Sass 07 | Joe</title>
+    <title>Advanced CSS&amp;Sass 08 - Responsive image | Joe</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -314,12 +312,12 @@ unit in media queryrem and em in media query would not be effected by our">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.gif')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.gif')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Advanced CSS&amp;Sass 07</h1>
+                    <h1 class="description center-align post-title">Advanced CSS&amp;Sass 08 - Responsive image</h1>
                 </div>
             </div>
         </div>
@@ -402,21 +400,21 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-12-08
+                    2022-12-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-12-08
+                    2022-12-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    37
+                    87
                 </div>
                 
 
@@ -443,13 +441,24 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="max-and-min-width-in-media-query"><a href="#max-and-min-width-in-media-query" class="headerlink" title="max- and min- width in media query"></a>max- and min- width in media query</h2><p><img src="/../imgs/Advanced%20CSS&Sass%2007/image-20221208224459409.png"></p>
-<h2 id="Breakpoint"><a href="#Breakpoint" class="headerlink" title="Breakpoint"></a>Breakpoint</h2><p><img src="/../imgs/Advanced%20CSS&Sass%2007/image-20221208225416152.png"></p>
-<p><img src="/../imgs/Advanced%20CSS&Sass%2007/image-20221208225655512.png"></p>
-<h2 id="unit-in-media-query"><a href="#unit-in-media-query" class="headerlink" title="unit in media query"></a>unit in media query</h2><h3 id="rem-and-em-in-media-query-would-not-be-effected-by-our-default-settings"><a href="#rem-and-em-in-media-query-would-not-be-effected-by-our-default-settings" class="headerlink" title="rem and em in media query would not be effected by our default settings"></a>rem and em in media query would not be effected by our default settings</h3><p><strong>in media query, use em(1 em &#x3D; 16px) instead of px:</strong></p>
-<p><img src="/../imgs/Advanced%20CSS&Sass%2007/image-20221208232538400.png"></p>
-<p><strong>to</strong></p>
-<p><img src="/../imgs/Advanced%20CSS&Sass%2007/image-20221208232629136.png"></p>
+                <h2 id="Responsive-image"><a href="#Responsive-image" class="headerlink" title="Responsive image"></a>Responsive image</h2><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/607567e488fc">https://www.jianshu.com/p/607567e488fc</a></p>
+<h3 id="what-is-responsive-image"><a href="#what-is-responsive-image" class="headerlink" title="what is responsive image"></a>what is responsive image</h3><p><strong>display different versions of the same image on the different screen size</strong></p>
+<p><img src="/../imgs/Advanced%20CSS&Sass%2008/image-20221210163749436.png"></p>
+<h2 id="set-responsive-img-1"><a href="#set-responsive-img-1" class="headerlink" title="set responsive img - 1"></a>set responsive img - 1</h2><ul>
+<li><p>encapsulate it with <picture></p>
+</li>
+<li><p><strong>srcset:</strong> use with <strong>density descriptor</strong> to specify different images under different pixel ratio</p>
+<p>​			  use <strong>width descriptor</strong> and <strong>sizes</strong> to specify different images under different widths</p>
+</li>
+<li><p>write media query in <source></p>
+</li>
+<li><p>if none of the media queries was matched, use <img></p>
+</li>
+</ul>
+<p><img src="/../imgs/Advanced%20CSS&Sass%2008/image-20221210210615008.png"></p>
+<h2 id="set-responsive-img-2"><a href="#set-responsive-img-2" class="headerlink" title="set responsive img - 2"></a>set responsive img - 2</h2><p><strong>srcset:</strong>  use <strong>width descriptor</strong> and <strong>sizes</strong> to specify different images under different widths</p>
+<p><img src="/../imgs/Advanced%20CSS&Sass%2008%20-%20Responsive%20image/image-20221210221132035.png"></p>
+<h2 id="Responsive-image-in-CSS"><a href="#Responsive-image-in-CSS" class="headerlink" title="Responsive image in CSS"></a>Responsive image in CSS</h2><p><img src="/../imgs/Advanced%20CSS&Sass%2008%20-%20Responsive%20image/image-20221210220926485.png"></p>
 
                 
             </div>
@@ -476,7 +485,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://h4lo343.github.io/2022/12/08/Advanced%20CSS&Sass%2007/">https://h4lo343.github.io/2022/12/08/Advanced%20CSS&Sass%2007/</a>
+                    <a href="https://h4lo343.github.io/2022/12/10/Advanced%20CSS&Sass%2008%20-%20Responsive%20image/">https://h4lo343.github.io/2022/12/10/Advanced%20CSS&Sass%2008%20-%20Responsive%20image/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -841,13 +850,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 <i class="far fa-dot-circle"></i>&nbsp;Current
             </div>
             <div class="card">
-                <a href="/2022/12/08/Advanced%20CSS&Sass%2007/">
+                <a href="/2022/12/10/Advanced%20CSS&Sass%2008%20-%20Responsive%20image/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.gif" class="responsive-img" alt="Advanced CSS&amp;Sass 07">
+                        <img src="/medias/featureimages/7.gif" class="responsive-img" alt="Advanced CSS&amp;Sass 08 - Responsive image">
                         
-                        <span class="card-title">Advanced CSS&amp;Sass 07</span>
+                        <span class="card-title">Advanced CSS&amp;Sass 08 - Responsive image</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -858,7 +867,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-10
                             </span>
                         <span class="publish-author">
                             
@@ -899,13 +908,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/12/06/Advanced%20CSS&Sass%2006%20-%20radial-gradient,%20ease%20function,%20paragraph%20CSS,%20target%20-%20%E5%89%AF%E6%9C%AC/">
+                <a href="/2022/12/08/Advanced%20CSS&Sass%2007%20-%20media%20query/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.gif" class="responsive-img" alt="Advanced CSS&amp;Sass 06 - radial-gradient, ease function, paragraph CSS, :target">
+                        <img src="/medias/featureimages/5.gif" class="responsive-img" alt="Advanced CSS&amp;Sass 07 - media query">
                         
-                        <span class="card-title">Advanced CSS&amp;Sass 06 - radial-gradient, ease function, paragraph CSS, :target</span>
+                        <span class="card-title">Advanced CSS&amp;Sass 07 - media query</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -916,7 +925,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-08
                             </span>
                         <span class="publish-author">
                             
