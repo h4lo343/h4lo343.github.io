@@ -4,8 +4,17 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Front-end Study Checklist, Joe">
-    <meta name="description" content="Front-end Study Checklist">
+    <meta name="keywords" content="Advanced CSS&amp;Sass 10 - flex, svg, current color, Joe">
+    <meta name="description" content="Flex attributes
+
+flex-basis 定义在分配空间之前，元素所占大小
+
+flex-grow 是指分配剩余空间
+
+flex-shrink 默认为1，指可以缩小，0为不能缩小
+
+
+ flex: none | [ &amp;lt;&amp;#">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +26,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Front-end Study Checklist | Joe</title>
+    <title>Advanced CSS&amp;Sass 10 - flex, svg, current color | Joe</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -316,7 +325,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Front-end Study Checklist</h1>
+                    <h1 class="description center-align post-title">Advanced CSS&amp;Sass 10 - flex, svg, current color</h1>
                 </div>
             </div>
         </div>
@@ -366,12 +375,16 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     
                     <div class="article-tag">
                         
+                            <a href="/tags/CSS/">
+                                <span class="chip bg-color">CSS</span>
+                            </a>
+                        
                             <a href="/tags/front-end/">
                                 <span class="chip bg-color">front-end</span>
                             </a>
                         
-                            <a href="/tags/javascript/">
-                                <span class="chip bg-color">javascript</span>
+                            <a href="/tags/SASS/">
+                                <span class="chip bg-color">SASS</span>
                             </a>
                         
                     </div>
@@ -395,21 +408,21 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-09-20
+                    2022-12-13
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-09-21
+                    2022-12-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    30
+                    176
                 </div>
                 
 
@@ -436,13 +449,37 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>[ ] Javascript deep copy</p>
-<p>[ ] Promise(implement from bottom), async</p>
-<p>[ ] implement map from reduce </p>
-<p>[ ] prototype chain</p>
-<p>[ ] Javascript closure, high-order function, this problem </p>
-<p>[ ] from input URL to rendering  webpage</p>
-<p>[ ] Javascript memory leakage</p>
+                <h2 id="Flex-attributes"><a href="#Flex-attributes" class="headerlink" title="Flex attributes"></a>Flex attributes</h2><p><img src="/../imgs/Advanced%20CSS&Sass%2010/image-20221213183033659.png"></p>
+<ul>
+<li><p>flex-basis 定义在分配空间之前，元素所占大小</p>
+</li>
+<li><p>flex-grow 是指分配剩余空间</p>
+</li>
+<li><p>flex-shrink 默认为1，指可以缩小，0为不能缩小</p>
+</li>
+</ul>
+<pre><code> flex: none | [ &lt;&#39;flex-grow&#39;&gt; &lt;&#39;flex-shrink&#39;&gt;? || &lt;&#39;flex-basis&#39;&gt; ]
+</code></pre>
+<h2 id="CSS-variable"><a href="#CSS-variable" class="headerlink" title="CSS variable"></a>CSS variable</h2><p>declare:</p>
+<ul>
+<li>属性名需要以两个减号（<code>--</code>）开始</li>
+</ul>
+<p><img src="/../imgs/Advanced%20CSS&Sass%2010/image-20221216122130844.png"></p>
+<p>不仅可以定义变量，也可以定义一般的CSS属性值：</p>
+<p><img src="/../imgs/Advanced%20CSS&Sass%2010/image-20221216142827235.png"></p>
+<p>use: </p>
+<p><img src="/../imgs/Advanced%20CSS&Sass%2010/image-20221216122144823.png"></p>
+<h2 id="使用SVG图标"><a href="#使用SVG图标" class="headerlink" title="使用SVG图标"></a>使用SVG图标</h2><p><img src="/../imgs/Advanced%20CSS&Sass%2010/image-20221216150906258.png"></p>
+<p>改变svg图标的颜色：</p>
+<p><img src="/../imgs/Advanced%20CSS&Sass%2010/image-20221216155125459.png"></p>
+<h2 id="使用currentColor"><a href="#使用currentColor" class="headerlink" title="使用currentColor"></a>使用currentColor</h2><p>currentColor 的语义是表示将颜色设为当前文字颜色</p>
+<p><img src="/../imgs/Advanced%20CSS&Sass%2010/image-20221216170024775.png"></p>
+<h2 id="margin-left，margin-right：auto"><a href="#margin-left，margin-right：auto" class="headerlink" title="margin-left，margin-right：auto"></a>margin-left，margin-right：auto</h2><p>在flex布局中，可以使用margin-left，margin-right：auto让某一个元素占用右边或者左边所有剩下的空间</p>
+<p>old：<br><img src="/../imgs/Advanced%20CSS&Sass%2010/image-20221216213207509.png"></p>
+<p>setting：</p>
+<p><img src="/../imgs/Advanced%20CSS&Sass%2010/image-20221216213218103.png"></p>
+<p>new：</p>
+<p><img src="/../imgs/Advanced%20CSS&Sass%2010/image-20221216213231950.png"></p>
 
                 
             </div>
@@ -469,7 +506,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://h4lo343.github.io/2022/09/20/Front-end%20Study%20Checklist/">https://h4lo343.github.io/2022/09/20/Front-end%20Study%20Checklist/</a>
+                    <a href="https://h4lo343.github.io/2022/12/13/Advanced%20CSS&Sass%2010%20-%20flex,%20svg,%20current%20color%20-%20%E5%89%AF%E6%9C%AC/">https://h4lo343.github.io/2022/12/13/Advanced%20CSS&Sass%2010%20-%20flex,%20svg,%20current%20color%20-%20%E5%89%AF%E6%9C%AC/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -507,12 +544,16 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     
                         <div class="article-tag">
                             
+                                <a href="/tags/CSS/">
+                                    <span class="chip bg-color">CSS</span>
+                                </a>
+                            
                                 <a href="/tags/front-end/">
                                     <span class="chip bg-color">front-end</span>
                                 </a>
                             
-                                <a href="/tags/javascript/">
-                                    <span class="chip bg-color">javascript</span>
+                                <a href="/tags/SASS/">
+                                    <span class="chip bg-color">SASS</span>
                                 </a>
                             
                         </div>
@@ -829,24 +870,24 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/09/22/node.js-fs,%20path%20module/">
+                <a href="/2022/12/15/Java%20Virtual%20Machine%2002%20-GC/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.gif" class="responsive-img" alt="node.js-fs, path module">
+                        <img src="/medias/featureimages/2.gif" class="responsive-img" alt="Java Virtual Machine 02">
                         
-                        <span class="card-title">node.js-fs, path module</span>
+                        <span class="card-title">Java Virtual Machine 02</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            The notes for slef-studying node.js
+                            
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-09-22
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-12-15
                         </span>
                         <span class="publish-author">
                             
@@ -863,20 +904,12 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/javascript/">
-                        <span class="chip bg-color">javascript</span>
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
                     </a>
                     
-                    <a href="/tags/back-end/">
-                        <span class="chip bg-color">back-end</span>
-                    </a>
-                    
-                    <a href="/tags/node-js/">
-                        <span class="chip bg-color">node.js</span>
-                    </a>
-                    
-                    <a href="/tags/fs/">
-                        <span class="chip bg-color">fs</span>
+                    <a href="/tags/java-virtual-machine/">
+                        <span class="chip bg-color">java-virtual-machine</span>
                     </a>
                     
                 </div>
@@ -890,31 +923,31 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/09/19/Acknowledge/">
+                <a href="/2022/12/12/Java%20Virtual%20Machine%2001%20-%20JVM%20basic,%20heap%20parameters%20-%20%E5%89%AF%E6%9C%AC/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.gif" class="responsive-img" alt="Acknowledgement">
+                        <img src="/medias/featureimages/5.gif" class="responsive-img" alt="Java Virtual Machine 01 - JVM basic, heap parameters">
                         
-                        <span class="card-title">Acknowledgement</span>
+                        <span class="card-title">Java Virtual Machine 01 - JVM basic, heap parameters</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            To Those Who Indirectly Helped Me in Making This Blog
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-12
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Miscellaneous/" class="post-category">
-                                    Miscellaneous
+                            <a href="/categories/Self-Study/" class="post-category">
+                                    Self-Study
                                 </a>
                             
                             
@@ -924,12 +957,12 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/acknowledgment/">
-                        <span class="chip bg-color">acknowledgment</span>
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
                     </a>
                     
-                    <a href="/tags/blog/">
-                        <span class="chip bg-color">blog</span>
+                    <a href="/tags/java-virtual-machine/">
+                        <span class="chip bg-color">java-virtual-machine</span>
                     </a>
                     
                 </div>
