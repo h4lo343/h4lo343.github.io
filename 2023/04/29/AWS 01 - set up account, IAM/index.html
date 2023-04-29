@@ -4,11 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="How to squash commits into one, Joe">
-    <meta name="description" content="
-use git log --online to check all your commits history in a brief form.
-
-find the hash head of the first commit you wan">
+    <meta name="keywords" content="AWS 01 - set up account, IAM, Joe">
+    <meta name="description" content="Basic Workflow for Setup An AWS Account1. Register
+register different AWS accounts for different purposes like: producti">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +18,7 @@ find the hash head of the first commit you wan">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>How to squash commits into one | Joe</title>
+    <title>AWS 01 - set up account, IAM | Joe</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -314,12 +312,12 @@ find the hash head of the first commit you wan">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.gif')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.gif')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">How to squash commits into one</h1>
+                    <h1 class="description center-align post-title">AWS 01 - set up account, IAM</h1>
                 </div>
             </div>
         </div>
@@ -369,8 +367,16 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/git/">
-                                <span class="chip bg-color">git</span>
+                            <a href="/tags/aws/">
+                                <span class="chip bg-color">aws</span>
+                            </a>
+                        
+                            <a href="/tags/aws-account/">
+                                <span class="chip bg-color">aws-account</span>
+                            </a>
+                        
+                            <a href="/tags/IAM/">
+                                <span class="chip bg-color">IAM</span>
                             </a>
                         
                     </div>
@@ -381,8 +387,8 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Tips/" class="post-category">
-                                Tips
+                            <a href="/categories/Self-Study/" class="post-category">
+                                Self-Study
                             </a>
                         
                     </div>
@@ -394,28 +400,28 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2023-04-11
+                    2023-04-29
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2023-04-11
+                    2023-04-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    110
+                    362
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    2 Min
                 </div>
                 
 
@@ -435,19 +441,76 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <ol>
-<li><p>use <code>git log --online</code> to check all your commits history in a brief form.</p>
+                <h1 id="Basic-Workflow-for-Setup-An-AWS-Account"><a href="#Basic-Workflow-for-Setup-An-AWS-Account" class="headerlink" title="Basic Workflow for Setup An AWS Account"></a>Basic Workflow for Setup An AWS Account</h1><h2 id="1-Register"><a href="#1-Register" class="headerlink" title="1. Register"></a>1. Register</h2><ol>
+<li><p>register different AWS accounts for different purposes like: production, testing, general…</p>
 </li>
-<li><p>find the hash head of the first commit you want to squash to. </p>
+<li><p>could use **Gmail + ** trick to create multiple unique Gmail addresses under only 1 address</p>
 </li>
-<li><p>run <code>git reset --soft &lt;hash&gt;</code> to reset the HEAD to that commit.</p>
+</ol>
+<h2 id="2-MFA"><a href="#2-MFA" class="headerlink" title="2. MFA"></a>2. MFA</h2><ol>
+<li><p>open dropdown at the top left and click <code>Security Credential</code></p>
 </li>
-<li><p>run <code>git add .</code> to add all the changes made in commits after the first one.</p>
+<li><p>add <strong>MFA</strong> in the main dashboard</p>
 </li>
-<li><p>run <code>git commit --amend -m &quot;new commit message&quot;</code> to replace the old commit message in the first commit to the new one.</p>
-<p><strong>ATTENTION:</strong> In step 5, omitting <code>--amend</code> would result in making a new commit and squash all commits into that new one instead of the first one. </p>
+</ol>
+<h2 id="3-Billing-and-Budget-Config"><a href="#3-Billing-and-Budget-Config" class="headerlink" title="3. Billing and Budget Config"></a>3. Billing and Budget Config</h2><ol>
+<li><p>open dropdown at the top left and click <code>Account</code></p>
 </li>
-<li><p>run <code>git push --force</code></p>
+<li><p>enable <strong>IAM User &amp; Role Access to billing</strong> in the main dashboard </p>
+</li>
+<li><p>click <code>Billing preferences</code>in the left bar and go to that dashboard </p>
+</li>
+<li><p>enable <strong>PDF invoices delivered by email</strong>， <strong>Receive AWS Free Tier alerts</strong> and <strong>Receive CloudWatch billing alerts</strong> in the current dashboard</p>
+</li>
+<li><p>click <code>Budget</code>in the left bar and go to the dashboard </p>
+</li>
+<li><p>create budget on your needs</p>
+</li>
+</ol>
+<h2 id="4-Set-an-IAM-Admin"><a href="#4-Set-an-IAM-Admin" class="headerlink" title="4. Set an IAM Admin"></a>4. Set an IAM Admin</h2><h1 id="IAM-Identity-and-Access-Management"><a href="#IAM-Identity-and-Access-Management" class="headerlink" title="IAM(Identity and Access Management)"></a>IAM(Identity and Access Management)</h1><h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><h3 id="3-roles-in-IAM"><a href="#3-roles-in-IAM" class="headerlink" title="3 roles in IAM:"></a>3 roles in IAM:</h3><p><img src="/imgs/AWS%2001%20-%20set%20up%20account/image-20230429183416563.png"></p>
+<h3 id="3-Main-Jobs-of-IAM"><a href="#3-Main-Jobs-of-IAM" class="headerlink" title="3 Main Jobs of IAM"></a>3 Main Jobs of IAM</h3><ul>
+<li>Manage Identities</li>
+<li>Authenticate Identities: prove who you are</li>
+<li>Authorize: allow or deny access to certain resource</li>
+</ul>
+<h2 id="Set-up-an-IAM-User-Workflow"><a href="#Set-up-an-IAM-User-Workflow" class="headerlink" title="Set up an IAM User Workflow"></a>Set up an IAM User Workflow</h2><ol>
+<li><p>you are in your root user account</p>
+</li>
+<li><p>move to <code>IAM</code> console</p>
+</li>
+<li><p>set account alias in main dashboard</p>
+</li>
+<li><p>go to the <code>user</code> dashboard</p>
+</li>
+<li><p>add user there(cancel <code>User must create a new password at next sign-in</code> if you don’t want)</p>
+</li>
+<li><p>use sign-in URL to access the account  </p>
+</li>
+<li><p>add <strong>MFA</strong> for IAM after signing in</p>
+</li>
+</ol>
+<h2 id="IAM-Access-Keys"><a href="#IAM-Access-Keys" class="headerlink" title="IAM Access Keys"></a>IAM Access Keys</h2><ul>
+<li>An IAM user has 1 <strong>username</strong> and 1 <strong>password</strong></li>
+<li>An IAM user can have <strong>2 access keys</strong></li>
+<li>Access keys could be <strong>created</strong>, <strong>deleted</strong>, <strong>be inactive</strong>, <strong>be active</strong></li>
+<li>Access key &#x3D; <strong>Access key Id</strong> + <strong>Secret Access Key</strong></li>
+<li>AWS does not allow <strong>any future downloads</strong> of the <strong>secret access key</strong>. !! So note down <strong>secret access key</strong> initially </li>
+<li><strong>Account user</strong> could have access key, not recommended, <strong>IAM users</strong> use access key, <strong>IAM roles</strong> do not use access key</li>
+</ul>
+<h3 id="Create-Access-Keys"><a href="#Create-Access-Keys" class="headerlink" title="Create Access Keys"></a>Create Access Keys</h3><ol>
+<li>click <code>Security Credential</code> in dropdown</li>
+<li>scroll down and click <code>Create Access Keys</code> in main dashboard</li>
+</ol>
+<h3 id="Connect-Access-keys-with-CLI"><a href="#Connect-Access-keys-with-CLI" class="headerlink" title="Connect Access keys with CLI"></a>Connect Access keys with CLI</h3><ol>
+<li><p>use the command to create a <strong>named profile</strong> in your environment to store <strong>access key</strong> with a specific name</p>
+<pre class="line-numbers language-shell"><code class="language-shell">aws configure --profile <profileName>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>enter <strong>access key id</strong>, <strong>secret access key</strong>, <strong>default region</strong>, <strong>default output format</strong></p>
+</li>
+<li><p>run </p>
+<pre><code>aws s3 ls --profile &lt;profileName&gt;
+</code></pre>
 </li>
 </ol>
 
@@ -476,7 +539,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://h4lo343.github.io/2023/04/11/How%20to%20squash%20commits%20into%20one/">https://h4lo343.github.io/2023/04/11/How%20to%20squash%20commits%20into%20one/</a>
+                    <a href="https://h4lo343.github.io/2023/04/29/AWS%2001%20-%20set%20up%20account,%20IAM/">https://h4lo343.github.io/2023/04/29/AWS%2001%20-%20set%20up%20account,%20IAM/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -514,8 +577,16 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/git/">
-                                    <span class="chip bg-color">git</span>
+                                <a href="/tags/aws/">
+                                    <span class="chip bg-color">aws</span>
+                                </a>
+                            
+                                <a href="/tags/aws-account/">
+                                    <span class="chip bg-color">aws-account</span>
+                                </a>
+                            
+                                <a href="/tags/IAM/">
+                                    <span class="chip bg-color">IAM</span>
                                 </a>
                             
                         </div>
@@ -832,13 +903,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2023/04/29/AWS%2001%20-%20set%20up%20account,%20IAM/">
+                <a href="/2023/04/29/AWS%2002%20-%20Network%20Zones,%20Infrastructure,%20VPC/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.gif" class="responsive-img" alt="AWS 01 - set up account, IAM">
+                        <img src="/medias/featureimages/6.gif" class="responsive-img" alt="AWS 02 - Network Zones, Infrastructure, VPC">
                         
-                        <span class="card-title">AWS 01 - set up account, IAM</span>
+                        <span class="card-title">AWS 02 - Network Zones, Infrastructure, VPC</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -870,14 +941,6 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                         <span class="chip bg-color">aws</span>
                     </a>
                     
-                    <a href="/tags/aws-account/">
-                        <span class="chip bg-color">aws-account</span>
-                    </a>
-                    
-                    <a href="/tags/IAM/">
-                        <span class="chip bg-color">IAM</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -889,13 +952,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/01/17/Function%20return%20type%20trap%20in%20TS/">
+                <a href="/2023/04/11/How%20to%20squash%20commits%20into%20one/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.gif" class="responsive-img" alt="Function return type trap in TS.">
+                        <img src="/medias/featureimages/2.gif" class="responsive-img" alt="How to squash commits into one">
                         
-                        <span class="card-title">Function return type trap in TS.</span>
+                        <span class="card-title">How to squash commits into one</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -906,14 +969,14 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-11
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Attention/" class="post-category">
-                                    Attention
+                            <a href="/categories/Tips/" class="post-category">
+                                    Tips
                                 </a>
                             
                             
@@ -923,8 +986,8 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/typescript/">
-                        <span class="chip bg-color">typescript</span>
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>
