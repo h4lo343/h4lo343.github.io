@@ -14,25 +14,8 @@
     content: " ";
     margin-top: -100px;
     visibility: hidden;
+    height: 100px;
 }
-
-#articleContent h1::before {
-  height: 100px;
-}
-
-#articleContent h2::before{
-  height:85px;
-}
-
-#articleContent h3::before{
-  height:70px;
-}
-
-#articleContent h4::before{
-  height:60px;
-}
-
-
 
 #articleContent :focus {
     outline: none;
