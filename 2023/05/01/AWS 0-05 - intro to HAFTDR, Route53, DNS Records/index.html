@@ -4,10 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="AWS 04 - intro to CFN, CW, Joe">
-    <meta name="description" content="CFN(CloudFormation) Intro
-A tool helps you create, delete, updating infrastructures using template
-Written in YAML and J">
+    <meta name="keywords" content="AWS 0-05 - intro to HA|FT|DR, Route53, DNS Records, Joe">
+    <meta name="description" content="HA(High-Availability)
+Aims to ensure an agreed level of operational performance, usually uptime, for a higher than norma">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +18,7 @@ Written in YAML and J">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>AWS 04 - intro to CFN, CW | Joe</title>
+    <title>AWS 0-05 - intro to HA|FT|DR, Route53, DNS Records | Joe</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -313,12 +312,12 @@ Written in YAML and J">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.gif')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.gif')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">AWS 04 - intro to CFN, CW</h1>
+                    <h1 class="description center-align post-title">AWS 0-05 - intro to HA|FT|DR, Route53, DNS Records</h1>
                 </div>
             </div>
         </div>
@@ -372,8 +371,20 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                                 <span class="chip bg-color">aws</span>
                             </a>
                         
-                            <a href="/tags/CFN/">
-                                <span class="chip bg-color">CFN</span>
+                            <a href="/tags/HA/">
+                                <span class="chip bg-color">HA</span>
+                            </a>
+                        
+                            <a href="/tags/FT/">
+                                <span class="chip bg-color">FT</span>
+                            </a>
+                        
+                            <a href="/tags/DR/">
+                                <span class="chip bg-color">DR</span>
+                            </a>
+                        
+                            <a href="/tags/route53/">
+                                <span class="chip bg-color">route53</span>
                             </a>
                         
                     </div>
@@ -397,28 +408,28 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2023-04-30
+                    2023-05-01
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2023-04-30
+                    2023-05-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    188
+                    371
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    2 Min
                 </div>
                 
 
@@ -438,38 +449,65 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="CFN-CloudFormation-Intro"><a href="#CFN-CloudFormation-Intro" class="headerlink" title="CFN(CloudFormation) Intro"></a>CFN(CloudFormation) Intro</h1><ul>
-<li>A tool helps you <strong>create, delete, updating</strong> infrastructures using template</li>
-<li>Written in <strong>YAML</strong> and <strong>JSON</strong></li>
-<li>The deletion of a stack would delete <strong>all resources created by this stack</strong></li>
-<li>Structure diagram:</li>
+                <h1 id="HA-High-Availability"><a href="#HA-High-Availability" class="headerlink" title="HA(High-Availability)"></a>HA(High-Availability)</h1><ul>
+<li>Aims to <strong>ensure</strong> an agreed level of <strong>operational performance</strong>, usually <strong>uptime</strong>, for a <strong>higher than normal period</strong></li>
 </ul>
-<p><img src="/../imgs/AWS%2004%20-/image-20230430154057123.png"></p>
+<h1 id="FT-Fault-Tolerance"><a href="#FT-Fault-Tolerance" class="headerlink" title="FT(Fault-Tolerance)"></a>FT(Fault-Tolerance)</h1><ul>
+<li>Property that <strong>enables</strong> system to <strong>continue operating properly</strong> in the event of the <strong>failure</strong> of some of its components</li>
+</ul>
+<h1 id="DR-Disaster-Recovery"><a href="#DR-Disaster-Recovery" class="headerlink" title="DR(Disaster-Recovery)"></a>DR(Disaster-Recovery)</h1><ul>
+<li>a set of policies, tools, procedures to <strong>enable the recovery</strong> or <strong>continuation</strong> of <strong>vital</strong> technology infrastructure and systems <strong>following a natural or human-induced disaster</strong></li>
+</ul>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><ul>
+<li>HA: <strong>Minimize</strong> any outages</li>
+<li>FT: Operate <strong>through faults</strong> <ul>
+<li>DR: Used when these don’t work</li>
+</ul>
+</li>
+</ul>
+<h1 id="Route53"><a href="#Route53" class="headerlink" title="Route53"></a>Route53</h1><ul>
+<li><p>Route53 allows you:</p>
 <ul>
-<li><p>when a template is submitted to cloud formation, it creates a <strong>stack which contains all logical resources</strong>, and then, 	<strong>stack makes physical resources based on logical resources</strong></p>
-<p><img src="/../imgs/AWS%2004%20-/image-20230430155304571.png"></p>
+<li><strong>register</strong> domain</li>
+<li>host <strong>zones</strong> files on <strong>managed name service</strong></li>
+</ul>
+</li>
+<li><p><strong>Global service</strong> but only <strong>1 database</strong></p>
+</li>
+<li><p>Route 53 is <strong>globally resilient</strong></p>
 </li>
 </ul>
-<h1 id="CW-CloudWatch-Intro"><a href="#CW-CloudWatch-Intro" class="headerlink" title="CW(CloudWatch) Intro"></a>CW(CloudWatch) Intro</h1><ul>
-<li><p><strong>It is a public service</strong></p>
-</li>
-<li><p>CW perform 3 main jobs: </p>
+<h2 id="Register-Domain"><a href="#Register-Domain" class="headerlink" title="Register Domain"></a>Register Domain</h2><ol>
+<li>route 53 checks for the registry for that <strong>top level domain</strong>, if it is available</li>
+<li>route 53 creates a <strong>zone file(hosted zone)</strong> for the domain being registered(zone file: a database contains all DNS information of the domain)</li>
+<li>allocates <strong>name service</strong> for this zone</li>
+<li>put zone file onto the <strong>4 managed name servers</strong></li>
+<li>connect top <strong>level domain registry</strong> and add the <strong>name server records</strong> into the zone file for the (.org or .com or .io or .net) top level domain </li>
+<li>you can register a domain using route 53, and put the <strong>zone file</strong> out side of the AWS <strong>name servers</strong></li>
+<li>you can also register a domain elsewhere and created <strong>hosted zone</strong> in route 53 and point the <strong>external domain</strong> as the route 53 <strong>name servers</strong></li>
+</ol>
 <ul>
-<li><strong>Metrics</strong>- collection, monitoring of metrics on AWS products, app. Some collection could be done natively, some need <strong>CloudWatch Agent</strong>, on APS products, Apps, on-premises</li>
-<li><strong>CloudWatch Logs</strong> - collection, monitoring based on logging data, on APS products, Apps, on-premises</li>
-<li><strong>CloudWatch Events</strong> - 1. generate event to do something in certain time 2. if an event happened, it generates another event to do some actions, on AWS services, AWS schedules</li>
+<li><p>Diagram:</p>
+<p><img src="/../imgs/AWS%2005/image-20230501195608896.png"></p>
+</li>
 </ul>
+<h1 id="DNS-Records-Types"><a href="#DNS-Records-Types" class="headerlink" title="DNS Records Types"></a>DNS Records Types</h1><ul>
+<li><p>Nameserver: nameserver inside a zone, point to the servers host subzone:</p>
+<p><img src="/../imgs/AWS%2005/image-20230501202323939.png"></p>
 </li>
-<li><p>A metric is a set of time ordered data</p>
+<li><p>A and AAAA records: host name for IP address <strong>directly</strong>. A to <strong>IPv4</strong>, AAAA to <strong>IPv6</strong>. Normally, we will create <strong>2 records</strong> for the same name(1 for A, another for AAAA):</p>
 </li>
-<li><p>Example of a CPU utilization metric:</p>
-<p><img src="/../imgs/AWS%2004%20-intro%20to%20CFN/image-20230430163202710.png"></p>
+</ul>
+<p><img src="/../imgs/AWS%2005/image-20230501202547180.png"></p>
+<ul>
+<li>CNAME Records: This type of record creates an <strong>alias</strong> for an A record. It points one domain name to another domain name:</li>
+</ul>
+<p><img src="/../imgs/AWS%2005/image-20230501202930882.png"></p>
+<ul>
+<li><p>MX Records(important for <strong>email</strong>): A n A record named <strong>“mail”</strong> inside. Email server looks at 2 addresses of the mail(<a href="mailto:&#x68;&#x69;&#64;&#103;&#x6f;&#x6f;&#103;&#108;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">&#x68;&#x69;&#64;&#103;&#x6f;&#x6f;&#103;&#108;&#x65;&#x2e;&#x63;&#x6f;&#x6d;</a>), focus on the <strong>domain:</strong> google.com, then using MX query on goole.com:<img src="/../imgs/AWS%2005/image-20230501203748310.png"></p>
 </li>
-<li><p><strong>Alarm</strong> could be created based on a <strong>metric</strong>, there are 3 states of alarm: OK, ALARM, INSUFFICIENT_DATA:</p>
-<p><img src="/../imgs/AWS%2004%20-intro%20to%20CFN/image-20230430163811732.png"></p>
-</li>
-<li><p><strong>Dimension</strong> is used to separate datapoints for different things or perspectives within the same metric:</p>
-<p><img src="/../imgs/AWS%2004%20-intro%20to%20CFN/image-20230430164035873.png"></p>
+<li><p>TXT Records: allows you to add <strong>arbitrary text</strong> to a domain, often used in <strong>domain name verification</strong></p>
+<p><img src="/../imgs/AWS%2005/image-20230501204104963.png"></p>
 </li>
 </ul>
 
@@ -498,7 +536,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://h4lo343.github.io/2023/04/30/AWS%2004%20-intro%20to%20CFN/">https://h4lo343.github.io/2023/04/30/AWS%2004%20-intro%20to%20CFN/</a>
+                    <a href="https://h4lo343.github.io/2023/05/01/AWS%200-05%20-%20intro%20to%20HAFTDR,%20Route53,%20DNS%20Records/">https://h4lo343.github.io/2023/05/01/AWS%200-05%20-%20intro%20to%20HAFTDR,%20Route53,%20DNS%20Records/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -540,8 +578,20 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                                     <span class="chip bg-color">aws</span>
                                 </a>
                             
-                                <a href="/tags/CFN/">
-                                    <span class="chip bg-color">CFN</span>
+                                <a href="/tags/HA/">
+                                    <span class="chip bg-color">HA</span>
+                                </a>
+                            
+                                <a href="/tags/FT/">
+                                    <span class="chip bg-color">FT</span>
+                                </a>
+                            
+                                <a href="/tags/DR/">
+                                    <span class="chip bg-color">DR</span>
+                                </a>
+                            
+                                <a href="/tags/route53/">
+                                    <span class="chip bg-color">route53</span>
                                 </a>
                             
                         </div>
@@ -859,13 +909,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 <i class="far fa-dot-circle"></i>&nbsp;Current
             </div>
             <div class="card">
-                <a href="/2023/04/30/AWS%2004%20-intro%20to%20CFN/">
+                <a href="/2023/05/01/AWS%200-05%20-%20intro%20to%20HAFTDR,%20Route53,%20DNS%20Records/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.gif" class="responsive-img" alt="AWS 04 - intro to CFN, CW">
+                        <img src="/medias/featureimages/2.gif" class="responsive-img" alt="AWS 0-05 - intro to HA|FT|DR, Route53, DNS Records">
                         
-                        <span class="card-title">AWS 04 - intro to CFN, CW</span>
+                        <span class="card-title">AWS 0-05 - intro to HA|FT|DR, Route53, DNS Records</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -876,7 +926,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-01
                             </span>
                         <span class="publish-author">
                             
@@ -898,8 +948,20 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                         <span class="chip bg-color">aws</span>
                     </a>
                     
-                    <a href="/tags/CFN/">
-                        <span class="chip bg-color">CFN</span>
+                    <a href="/tags/HA/">
+                        <span class="chip bg-color">HA</span>
+                    </a>
+                    
+                    <a href="/tags/FT/">
+                        <span class="chip bg-color">FT</span>
+                    </a>
+                    
+                    <a href="/tags/DR/">
+                        <span class="chip bg-color">DR</span>
+                    </a>
+                    
+                    <a href="/tags/route53/">
+                        <span class="chip bg-color">route53</span>
                     </a>
                     
                 </div>
@@ -913,13 +975,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/04/30/AWS%2003%20-%20intro%20to%20EC2,%20S3/">
+                <a href="/2023/05/01/AWS%201-01%20-%20IAM%20Policy,%20User,%20Group,%20ARN/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.gif" class="responsive-img" alt="AWS 03 - Intro to EC2, S3">
+                        <img src="/medias/featureimages/3.gif" class="responsive-img" alt="AWS 1-01 - IAM Policy, User, Group, ARN">
                         
-                        <span class="card-title">AWS 03 - Intro to EC2, S3</span>
+                        <span class="card-title">AWS 1-01 - IAM Policy, User, Group, ARN</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -930,7 +992,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-01
                             </span>
                         <span class="publish-author">
                             
@@ -951,12 +1013,16 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                         <span class="chip bg-color">aws</span>
                     </a>
                     
-                    <a href="/tags/EC2/">
-                        <span class="chip bg-color">EC2</span>
+                    <a href="/tags/IAM-policy/">
+                        <span class="chip bg-color">IAM-policy</span>
                     </a>
                     
-                    <a href="/tags/S3/">
-                        <span class="chip bg-color">S3</span>
+                    <a href="/tags/IAM-user/">
+                        <span class="chip bg-color">IAM-user</span>
+                    </a>
+                    
+                    <a href="/tags/ARN/">
+                        <span class="chip bg-color">ARN</span>
                     </a>
                     
                 </div>

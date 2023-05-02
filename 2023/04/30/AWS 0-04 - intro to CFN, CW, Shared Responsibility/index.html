@@ -4,9 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="AWS 01 - set up account, IAM, Joe">
-    <meta name="description" content="Basic Workflow for Setup An AWS Account1. Register
-register different AWS accounts for different purposes like: producti">
+    <meta name="keywords" content="AWS 0-04 - intro to CFN, CW, Shared Responsibility, Joe">
+    <meta name="description" content="CFN(CloudFormation) Intro
+A tool helps you create, delete, updating infrastructures using template
+Written in YAML and J">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +19,7 @@ register different AWS accounts for different purposes like: producti">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>AWS 01 - set up account, IAM | Joe</title>
+    <title>AWS 0-04 - intro to CFN, CW, Shared Responsibility | Joe</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -312,12 +313,12 @@ register different AWS accounts for different purposes like: producti">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.gif')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.gif')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">AWS 01 - set up account, IAM</h1>
+                    <h1 class="description center-align post-title">AWS 0-04 - intro to CFN, CW, Shared Responsibility</h1>
                 </div>
             </div>
         </div>
@@ -371,12 +372,16 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                                 <span class="chip bg-color">aws</span>
                             </a>
                         
-                            <a href="/tags/aws-account/">
-                                <span class="chip bg-color">aws-account</span>
+                            <a href="/tags/CFN/">
+                                <span class="chip bg-color">CFN</span>
                             </a>
                         
-                            <a href="/tags/IAM/">
-                                <span class="chip bg-color">IAM</span>
+                            <a href="/tags/CW/">
+                                <span class="chip bg-color">CW</span>
+                            </a>
+                        
+                            <a href="/tags/shared-responsibility/">
+                                <span class="chip bg-color">shared-responsibility</span>
                             </a>
                         
                     </div>
@@ -400,7 +405,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2023-04-29
+                    2023-04-30
                 </div>
                 
 
@@ -414,14 +419,14 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    362
+                    211
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    2 Min
+                    1 Min
                 </div>
                 
 
@@ -441,71 +446,49 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Basic-Workflow-for-Setup-An-AWS-Account"><a href="#Basic-Workflow-for-Setup-An-AWS-Account" class="headerlink" title="Basic Workflow for Setup An AWS Account"></a>Basic Workflow for Setup An AWS Account</h1><h2 id="1-Register"><a href="#1-Register" class="headerlink" title="1. Register"></a>1. Register</h2><ol>
-<li><p>register different AWS accounts for different purposes like: production, testing, general…</p>
-</li>
-<li><p>could use **Gmail + ** trick to create multiple unique Gmail addresses under only 1 address</p>
-</li>
-</ol>
-<h2 id="2-MFA"><a href="#2-MFA" class="headerlink" title="2. MFA"></a>2. MFA</h2><ol>
-<li><p>open dropdown at the top left and click <code>Security Credential</code></p>
-</li>
-<li><p>add <strong>MFA</strong> in the main dashboard</p>
-</li>
-</ol>
-<h2 id="3-Billing-and-Budget-Config"><a href="#3-Billing-and-Budget-Config" class="headerlink" title="3. Billing and Budget Config"></a>3. Billing and Budget Config</h2><ol>
-<li><p>open dropdown at the top right and click <code>Account</code></p>
-</li>
-<li><p>enable <strong>IAM User &amp; Role Access to billing</strong> in the main dashboard </p>
-</li>
-<li><p>click <code>Billing preferences</code>in the left bar and go to that dashboard </p>
-</li>
-<li><p>enable <strong>PDF invoices delivered by email</strong>， <strong>Receive AWS Free Tier alerts</strong> and <strong>Receive CloudWatch billing alerts</strong> in the current dashboard</p>
-</li>
-<li><p>click <code>Budget</code>in the left bar and go to the dashboard </p>
-</li>
-<li><p>create budget on your needs</p>
-</li>
-</ol>
-<h2 id="4-Set-an-IAM-Admin"><a href="#4-Set-an-IAM-Admin" class="headerlink" title="4. Set an IAM Admin"></a>4. Set an IAM Admin</h2><h1 id="IAM-Identity-and-Access-Management"><a href="#IAM-Identity-and-Access-Management" class="headerlink" title="IAM(Identity and Access Management)"></a>IAM(Identity and Access Management)</h1><h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><h3 id="3-roles-in-IAM"><a href="#3-roles-in-IAM" class="headerlink" title="3 roles in IAM:"></a>3 roles in IAM:</h3><p><img src="/../imgs/AWS%2001%20-%20set%20up%20account,%20IAM/image-20230429211615469.png"></p>
-<h3 id="3-Main-Jobs-of-IAM"><a href="#3-Main-Jobs-of-IAM" class="headerlink" title="3 Main Jobs of IAM"></a>3 Main Jobs of IAM</h3><ul>
-<li>Manage Identities</li>
-<li>Authenticate Identities: prove who you are</li>
-<li>Authorize: allow or deny access to certain resource</li>
+                <h1 id="CFN-CloudFormation-Intro"><a href="#CFN-CloudFormation-Intro" class="headerlink" title="CFN(CloudFormation) Intro"></a>CFN(CloudFormation) Intro</h1><ul>
+<li>A tool helps you <strong>create, delete, updating</strong> infrastructures using template</li>
+<li>Written in <strong>YAML</strong> and <strong>JSON</strong></li>
+<li>The deletion of a stack would delete <strong>all resources created by this stack</strong></li>
+<li>Structure diagram:</li>
 </ul>
-<h2 id="Set-up-an-IAM-User-Workflow"><a href="#Set-up-an-IAM-User-Workflow" class="headerlink" title="Set up an IAM User Workflow"></a>Set up an IAM User Workflow</h2><ol>
-<li>you are in your root user account</li>
-<li>move to <code>IAM</code> console</li>
-<li>set account alias in main dashboard</li>
-<li>go to the <code>user</code> dashboard</li>
-<li>add user there(cancel <code>User must create a new password at next sign-in</code> if you don’t want)</li>
-<li>use sign-in URL to access the account  </li>
-<li>add <strong>MFA</strong> for IAM after signing in</li>
-</ol>
-<h2 id="IAM-Access-Keys"><a href="#IAM-Access-Keys" class="headerlink" title="IAM Access Keys"></a>IAM Access Keys</h2><ul>
-<li>An IAM user has 1 <strong>username</strong> and 1 <strong>password</strong></li>
-<li>An IAM user can have <strong>2 access keys</strong></li>
-<li>Access keys could be <strong>created</strong>, <strong>deleted</strong>, <strong>be inactive</strong>, <strong>be active</strong></li>
-<li>Access key &#x3D; <strong>Access key Id</strong> + <strong>Secret Access Key</strong></li>
-<li>AWS does not allow <strong>any future downloads</strong> of the <strong>secret access key</strong>. !! So note down <strong>secret access key</strong> initially </li>
-<li><strong>Account user</strong> could have access key, not recommended, <strong>IAM users</strong> use access key, <strong>IAM roles</strong> do not use access key</li>
+<p><img src="/../imgs/AWS%2004%20-/image-20230430154057123.png"></p>
+<ul>
+<li><p>when a template is submitted to cloud formation, it creates a <strong>stack which contains all logical resources</strong>, and then, 	<strong>stack makes physical resources based on logical resources</strong></p>
+<p><img src="/../imgs/AWS%2004%20-/image-20230430155304571.png"></p>
+</li>
 </ul>
-<h3 id="Create-Access-Keys"><a href="#Create-Access-Keys" class="headerlink" title="Create Access Keys"></a>Create Access Keys</h3><ol>
-<li>click <code>Security Credential</code> in dropdown</li>
-<li>scroll down and click <code>Create Access Keys</code> in main dashboard</li>
-</ol>
-<h3 id="Connect-Access-keys-with-CLI"><a href="#Connect-Access-keys-with-CLI" class="headerlink" title="Connect Access keys with CLI"></a>Connect Access keys with CLI</h3><ol>
-<li><p>use the command to create a <strong>named profile</strong> in your environment to store <strong>access key</strong> with a specific name</p>
-<pre class="line-numbers language-shell"><code class="language-shell">aws configure --profile <profileName>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h1 id="CW-CloudWatch-Intro"><a href="#CW-CloudWatch-Intro" class="headerlink" title="CW(CloudWatch) Intro"></a>CW(CloudWatch) Intro</h1><ul>
+<li><p><strong>It is a public service</strong></p>
 </li>
-<li><p>enter <strong>access key id</strong>, <strong>secret access key</strong>, <strong>default region</strong>, <strong>default output format</strong></p>
+<li><p>CW perform 3 main jobs: </p>
+<ul>
+<li><strong>Metrics</strong>- collection, monitoring of metrics on AWS products, app. Some collection could be done natively, some need <strong>CloudWatch Agent</strong>, on APS products, Apps, on-premises</li>
+<li><strong>CloudWatch Logs</strong> - collection, monitoring based on logging data, on APS products, Apps, on-premises</li>
+<li><strong>CloudWatch Events</strong> - 1. generate event to do something in certain time 2. if an event happened, it generates another event to do some actions, on AWS services, AWS schedules</li>
+</ul>
 </li>
-<li><p>run </p>
-<pre><code>aws s3 ls --profile &lt;profileName&gt;
-</code></pre>
+<li><p>A metric is a set of time ordered data</p>
 </li>
-</ol>
+<li><p>Example of a CPU utilization metric:</p>
+<p><img src="/../imgs/AWS%2004%20-intro%20to%20CFN/image-20230430163202710.png"></p>
+</li>
+<li><p><strong>Alarm</strong> could be created based on a <strong>metric</strong>, there are 3 states of alarm: OK, ALARM, INSUFFICIENT_DATA:</p>
+<p><img src="/../imgs/AWS%2004%20-intro%20to%20CFN/image-20230430163811732.png"></p>
+</li>
+<li><p><strong>Dimension</strong> is used to separate datapoints for different things or perspectives within the same metric:</p>
+<p><img src="/../imgs/AWS%2004%20-intro%20to%20CFN/image-20230430164035873.png"></p>
+</li>
+</ul>
+<h1 id="Shared-Responsibility-Model"><a href="#Shared-Responsibility-Model" class="headerlink" title="Shared Responsibility Model"></a>Shared Responsibility Model</h1><ul>
+<li><p>AWS is responsible for the security <strong>of</strong> the cloud</p>
+</li>
+<li><p>Customer is responsible for the security <strong>in</strong> the cloud</p>
+</li>
+<li><p>Diagram(ex):</p>
+<p><img src="/../imgs/AWS%2004%20-intro%20to%20CFN/image-20230501191325047.png"></p>
+</li>
+</ul>
 
                 
             </div>
@@ -532,7 +515,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://h4lo343.github.io/2023/04/29/AWS%2001%20-%20set%20up%20account,%20IAM/">https://h4lo343.github.io/2023/04/29/AWS%2001%20-%20set%20up%20account,%20IAM/</a>
+                    <a href="https://h4lo343.github.io/2023/04/30/AWS%200-04%20-%20intro%20to%20CFN,%20CW,%20Shared%20Responsibility/">https://h4lo343.github.io/2023/04/30/AWS%200-04%20-%20intro%20to%20CFN,%20CW,%20Shared%20Responsibility/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -574,12 +557,16 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                                     <span class="chip bg-color">aws</span>
                                 </a>
                             
-                                <a href="/tags/aws-account/">
-                                    <span class="chip bg-color">aws-account</span>
+                                <a href="/tags/CFN/">
+                                    <span class="chip bg-color">CFN</span>
                                 </a>
                             
-                                <a href="/tags/IAM/">
-                                    <span class="chip bg-color">IAM</span>
+                                <a href="/tags/CW/">
+                                    <span class="chip bg-color">CW</span>
+                                </a>
+                            
+                                <a href="/tags/shared-responsibility/">
+                                    <span class="chip bg-color">shared-responsibility</span>
                                 </a>
                             
                         </div>
@@ -896,13 +883,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2023/04/30/AWS%2003%20-%20intro%20to%20EC2,%20S3/">
+                <a href="/2023/05/01/AWS%201-01%20-%20IAM%20Policy,%20User,%20Group,%20ARN/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.gif" class="responsive-img" alt="AWS 03 - Intro to EC2, S3">
+                        <img src="/medias/featureimages/3.gif" class="responsive-img" alt="AWS 1-01 - IAM Policy, User, Group, ARN">
                         
-                        <span class="card-title">AWS 03 - Intro to EC2, S3</span>
+                        <span class="card-title">AWS 1-01 - IAM Policy, User, Group, ARN</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -913,8 +900,69 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-30
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-05-01
                         </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Self-Study/" class="post-category">
+                                    Self-Study
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/aws/">
+                        <span class="chip bg-color">aws</span>
+                    </a>
+                    
+                    <a href="/tags/IAM-policy/">
+                        <span class="chip bg-color">IAM-policy</span>
+                    </a>
+                    
+                    <a href="/tags/IAM-user/">
+                        <span class="chip bg-color">IAM-user</span>
+                    </a>
+                    
+                    <a href="/tags/ARN/">
+                        <span class="chip bg-color">ARN</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/04/30/AWS%200-03%20-%20intro%20to%20EC2,%20S3/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/5.gif" class="responsive-img" alt="AWS 0-03 - Intro to EC2, S3">
+                        
+                        <span class="card-title">AWS 0-03 - Intro to EC2, S3</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -940,63 +988,6 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     
                     <a href="/tags/S3/">
                         <span class="chip bg-color">S3</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2023/04/29/AWS%2002%20-%20intro%20to%20network%20zones,%20infrastructure,%20VPS/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/6.gif" class="responsive-img" alt="AWS 02 - intro to network zones, infrastructure, VPS">
-                        
-                        <span class="card-title">AWS 02 - intro to network zones, infrastructure, VPS</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-29
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Self-Study/" class="post-category">
-                                    Self-Study
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/aws/">
-                        <span class="chip bg-color">aws</span>
-                    </a>
-                    
-                    <a href="/tags/network-zones/">
-                        <span class="chip bg-color">network-zones</span>
-                    </a>
-                    
-                    <a href="/tags/VPC/">
-                        <span class="chip bg-color">VPC</span>
                     </a>
                     
                 </div>
