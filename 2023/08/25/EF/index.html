@@ -4,9 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Advanced CSS&amp;Sass 05 - clip with linear-gradient, placeholder css and pseudo class, inherit in input, Joe">
-    <meta name="description" content="Make color clip using linear-gradientbackground-image:
-        linear-gradient(100deg, rgba($color-white, .9) 50%, trans">
+    <meta name="keywords" content="Entity Framework Core, Joe">
+    <meta name="description" content="Config
+there are 2 ways for EF core to make configurations on table, 1. data annotation 2. Fluent API
+
+data annotation(e">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +20,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Advanced CSS&amp;Sass 05 - clip with linear-gradient, placeholder css and pseudo class, inherit in input | Joe</title>
+    <title>Entity Framework Core | Joe</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -312,12 +314,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.gif')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.gif')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Advanced CSS&amp;Sass 05 - clip with linear-gradient, placeholder css and pseudo class, inherit in input</h1>
+                    <h1 class="description center-align post-title">Entity Framework Core</h1>
                 </div>
             </div>
         </div>
@@ -367,16 +369,20 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/css/">
-                                <span class="chip bg-color">css</span>
+                            <a href="/tags/net/">
+                                <span class="chip bg-color">.net</span>
                             </a>
                         
-                            <a href="/tags/front-end/">
-                                <span class="chip bg-color">front-end</span>
+                            <a href="/tags/c/">
+                                <span class="chip bg-color">c#</span>
                             </a>
                         
-                            <a href="/tags/SASS/">
-                                <span class="chip bg-color">SASS</span>
+                            <a href="/tags/back-end/">
+                                <span class="chip bg-color">back-end</span>
+                            </a>
+                        
+                            <a href="/tags/entity-framework-core/">
+                                <span class="chip bg-color">entity-framework-core</span>
                             </a>
                         
                     </div>
@@ -400,28 +406,28 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-12-03
+                    2023-08-25
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2023-04-11
+                    2023-09-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    86
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    6 Min
                 </div>
                 
 
@@ -441,25 +447,216 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Make-color-clip-using-linear-gradient"><a href="#Make-color-clip-using-linear-gradient" class="headerlink" title="Make color clip using linear-gradient"></a>Make color clip using linear-gradient</h2><pre class="line-numbers language-css"><code class="language-css"><span class="token property">background-image</span><span class="token punctuation">:</span>
-        <span class="token function">linear-gradient</span><span class="token punctuation">(</span><span class="token number">100</span>deg, <span class="token function">rgba</span><span class="token punctuation">(</span>$color-white, <span class="token number">.9</span><span class="token punctuation">)</span> <span class="token number">50%</span>, transparent <span class="token number">50%</span><span class="token punctuation">)</span>,
-        <span class="token url">url("../../img/nat-10.jpg")</span><span class="token punctuation">;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p><img src="/../imgs/Advanced%20CSS&Sass%2005/image-20221206133758927.png"></p>
-<h2 id="Set-css-for-input-placeholder"><a href="#Set-css-for-input-placeholder" class="headerlink" title="Set css for input placeholder"></a>Set css for input placeholder</h2><p><img src="/../imgs/Advanced%20CSS&Sass%2005/image-20221203223019341.png"></p>
-<h2 id="About-text-color-font…-in-input"><a href="#About-text-color-font…-in-input" class="headerlink" title="About text color, font… in input"></a>About text color, font… in input</h2><p>in html input tag, you have to set </p>
-<pre class="line-numbers language-css"><code class="language-css"><span class="token property">font-family</span><span class="token punctuation">:</span> inherit<span class="token punctuation">;</span>
-<span class="token property">color</span><span class="token punctuation">:</span> inherit<span class="token punctuation">;</span>
-<span class="token number">...</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>to make text in input consistent with in other tags, because browsers would select input again and force the default css into them.</p>
-<h2 id="Check-validation-in-css"><a href="#Check-validation-in-css" class="headerlink" title="Check validation in css"></a>Check validation in css</h2><p>eg: email input </p>
-<p><strong>in html</strong></p>
-<p><img src="/../imgs/Advanced%20CSS&Sass%2005/image-20221203223831265.png"></p>
-<p><strong>in css</strong></p>
-<p><img src="/../imgs/Advanced%20CSS&Sass%2005/image-20221203223850687.png"></p>
-<h3 id="there-is-placeholder-shown-selector"><a href="#there-is-placeholder-shown-selector" class="headerlink" title="there is :placeholder-shown selector"></a>there is :placeholder-shown selector</h3><h2 id="Copyright-icon-in-html"><a href="#Copyright-icon-in-html" class="headerlink" title="Copyright icon in html"></a>Copyright icon in html</h2><p><img src="/../imgs/Advanced%20CSS&Sass%2005/image-20221206135953435.png"></p>
-<p><img src="/../imgs/Advanced%20CSS&Sass%2005/image-20221206140002975.png"></p>
+                <h1 id="Config"><a href="#Config" class="headerlink" title="Config"></a>Config</h1><ul>
+<li><p>there are 2 ways for EF core to make configurations on table, 1. <strong>data annotation</strong> 2. <strong>Fluent API</strong></p>
+<ol>
+<li><p>data annotation(easier but high coupling)</p>
+<p><img src="/../imgs/EF/image-20230825134842694.png"></p>
+</li>
+<li><p>fluent api(more code but low coupling, recommended)</p>
+<p><img src="/../imgs/EF/image-20230825134651859.png"></p>
+</li>
+</ol>
+</li>
+<li><p>fluent API and data annotation doc: <a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/ef/core/modeling/">https://learn.microsoft.com/en-us/ef/core/modeling/</a></p>
+</li>
+</ul>
+<h1 id="Index"><a href="#Index" class="headerlink" title="Index"></a>Index</h1><ul>
+<li>Add index in EF: <a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/ef/core/modeling/indexes">https://learn.microsoft.com/en-us/ef/core/modeling/indexes</a></li>
+<li>Non-cluster Index: a table can have <strong>multiple non-cluster index</strong>. It is beneficial for data retrieving operations on specific <strong>columns</strong> <ol>
+<li>Index</li>
+<li>Composite Index</li>
+<li>Unique Index</li>
+</ol>
+</li>
+<li>Cluster Index: determine the <strong>actual arrangement</strong> of rows on <strong>physical disks</strong>, helpful for <strong>range queries</strong>， harmful for <strong>insertion</strong>, 1 table could only have 1 cluster index</li>
+</ul>
+<h1 id="Primary-Key"><a href="#Primary-Key" class="headerlink" title="Primary Key"></a>Primary Key</h1><ul>
+<li><p>self-increment primary key: after <strong>save</strong> into db, ef will <strong>automatically</strong> update the <strong>primary key</strong></p>
+<ul>
+<li>perform badly in <strong>high concurrency insertion situation(all the transaction want to obtain the next primary key value)</strong></li>
+</ul>
+<p><img src="/../imgs/EF/image-20230825154055896.png"></p>
+<p>print: 0, updatedValue</p>
+</li>
+<li><p>GUID primary key</p>
+<ul>
+<li><p>good performance in <strong>high concurrency insertion situation</strong></p>
+</li>
+<li><p>GUID value is not <strong>sequential</strong>, so you can not use it as <strong>cluster index!!!</strong> </p>
+</li>
+<li><p>in <strong>MySQL</strong>, the <strong>InnoDB</strong> engine forces <strong>primary key</strong> as the <strong>cluster index</strong>, so <strong>DO NOT</strong> use GUID as <strong>primary key</strong> when using <strong>MySQL!!!!!!!!!!!!!!!!</strong></p>
+</li>
+</ul>
+</li>
+<li><p>Add GUID primary key data:</p>
+<p><img src="/../imgs/EF/image-20230825160721508.png"></p>
+</li>
+</ul>
+<p><img src="/../imgs/EF/image-20230825160740943.png"></p>
+<p>Not like self-increment primary key, the GUID is generated by <strong>EF core</strong> instead of the <strong>database</strong>. That’s why the GUID can be printed before the <strong>.SaveChangeAsync()</strong> method</p>
+<ul>
+<li><strong>GUID-Self-Increment Primary Key Best Practice</strong>: use self-increment key as <strong>physical primary key</strong>, and use GUID key as <strong>logical primary key</strong></li>
+</ul>
+<h1 id="Migration"><a href="#Migration" class="headerlink" title="Migration"></a>Migration</h1><ul>
+<li>by using migration scripts, you can do <strong>up</strong> and <strong>down</strong> migrations to higher or lower version, so <strong>do not</strong> delete files inside the <strong>Migrations</strong> folder</li>
+<li>Migration Commands:<ul>
+<li>Update-Database xxx: roll back database into xxx state</li>
+<li>Remove-migration</li>
+<li>Script-Migration: used to generate SQL operating script from <strong>nothing</strong> to the <strong>latest migration</strong>, it allows you to <strong>customize</strong> your own <strong>SQL scripts</strong>. It only <strong>generates scripts</strong>, it won’t execute scripts for you. (this command is used help manually update database in <strong>production environment</strong>)</li>
+<li>Script-Migration D F: generate script for update from <strong>migration D</strong> to <strong>migration F</strong></li>
+<li>Script-Migration D: generate script for update from <strong>migration D</strong> to the <strong>latest migration</strong></li>
+</ul>
+</li>
+</ul>
+<h1 id="EF-and-ADO-NET"><a href="#EF-and-ADO-NET" class="headerlink" title="EF and ADO.NET"></a>EF and ADO.NET</h1><ul>
+<li><p>EF core translates <strong>C# syntax</strong> into SQL scripts and pass <strong>SQL scripts</strong> to the <strong>ADO.NET</strong> </p>
+<p><img src="/../imgs/EF/image-20230826172123644.png"></p>
+</li>
+</ul>
+<h1 id="EF-Core-and-DB-Compatibility"><a href="#EF-Core-and-DB-Compatibility" class="headerlink" title="EF Core and DB Compatibility"></a>EF Core and DB Compatibility</h1><ul>
+<li>Only DB with <strong>EF Core Provider</strong> can use <strong>EF Core</strong> to operate on it. If there is no <strong>EF Core Provider</strong> for a specific DB, you can only use <strong>ADO.NET</strong> to manipulate it using <strong>scripts</strong></li>
+</ul>
+<h1 id="EF-optimize-extra-columns"><a href="#EF-optimize-extra-columns" class="headerlink" title="EF optimize extra columns"></a>EF optimize extra columns</h1><ul>
+<li><p>by using <code>select</code></p>
+<p><img src="/../imgs/EF/image-20230827153228606.png"></p>
+</li>
+</ul>
+<h1 id="EF-One-to-Many-Relationship"><a href="#EF-One-to-Many-Relationship" class="headerlink" title="EF One-to-Many Relationship"></a>EF One-to-Many Relationship</h1><ul>
+<li><p><strong>One-to-Many Relationship</strong> insertion and config:</p>
+<p>In data model: </p>
+<p><img src="/../imgs/EF/image-20230827141201157.png"></p>
+<p>In Fluent API(config it in the “many”‘s configuration file)</p>
+<p><img src="/../imgs/EF/image-20230827143053174.png"></p>
+<p>Add Data</p>
+<p><img src="/../imgs/EF/image-20230827150833353.png"></p>
+</li>
+<li><p><strong>One-To-Many Relationship</strong> query</p>
+<p><img src="/../imgs/EF/image-20230827151547932.png"></p>
+</li>
+<li><p>Explicitly name the foreign key:</p>
+<p>the EF will <strong>automatically generate the foreign key</strong> column for One-To-Many Relationship in <strong>database</strong>, but you could not use it until you explicitly add it into your <strong>FluentAPI</strong> and <strong>data model</strong></p>
+<p><img src="/../imgs/EF/image-20230827154054762.png"></p>
+<p><img src="/../imgs/EF/image-20230827154135011.png"></p>
+</li>
+<li><p>One-To-Many single navigation property:</p>
+<p>Sometimes, in some one-to-many relationship, we do not with to add the navigation properties to the <strong>one</strong> side for each of its <strong>many-related</strong> tables. In this case, we need to apply <strong>single navigation property</strong> to <strong>omit navigation property in the “one” table</strong> </p>
+<p>In Fluent API: pass no argument into <code>WithMany()</code> can omit the <strong>navigation property</strong> in <strong>one</strong>‘s side <img src="/../imgs/EF/image-20230828133440069.png"></p>
+</li>
+</ul>
+<h1 id="EF-One-to-One-Relationship"><a href="#EF-One-to-One-Relationship" class="headerlink" title="EF One-to-One Relationship"></a>EF One-to-One Relationship</h1><ul>
+<li><p>For one-to-one relationship in EF, you must <strong>explicitly declare</strong> at least one <strong>foreign key property</strong> and config it in the <strong>Fluent API</strong>. EF core will not automatically generate <strong>foreign key property</strong> for you like in many-to-many relationship</p>
+<p>In data model:</p>
+<p><img src="/../imgs/EF/image-20230828153527129.png"></p>
+<p>In Config:</p>
+<p><img src="/../imgs/EF/image-20230828153545806.png"></p>
+</li>
+</ul>
+<h1 id="EF-Many-to-Many-Relationship"><a href="#EF-Many-to-Many-Relationship" class="headerlink" title="EF Many-to-Many Relationship"></a>EF Many-to-Many Relationship</h1><ul>
+<li><p>How to use m-2-m in EF(only 1 side config is enough)</p>
+<p>In data model:</p>
+<p><img src="/../imgs/EF/image-20230828154223297.png"></p>
+<p>In config: </p>
+<p><img src="/../imgs/EF/image-20230828154242179.png"></p>
+</li>
+</ul>
+<h1 id="IEnumerable-and-IQueryable"><a href="#IEnumerable-and-IQueryable" class="headerlink" title="IEnumerable and IQueryable"></a>IEnumerable and IQueryable</h1><ul>
+<li><p><strong>IEnumerable</strong>‘s query is executed inside the memory(server side query) while <strong>IQueryable</strong>‘s query is translated into <strong>SQL scripts</strong> and executed inside <strong>database</strong></p>
+</li>
+<li><p><strong>IQueryable</strong> has <strong>lazy execution</strong>, which means, only the <strong>terminating method</strong> of an IQueryable instance will make the <strong>query</strong> be truly executed</p>
+<p>Terminating Methods(if the return type of a method is <strong>IQueryable</strong> , then that method is not terminating method, otherwise, it is): </p>
+<ul>
+<li>traversing </li>
+<li>ToArray()</li>
+<li>ToList()</li>
+<li>Min()</li>
+<li>Max()</li>
+<li>Count()</li>
+<li>…</li>
+</ul>
+</li>
+<li><p>Use the <strong>lazy execution</strong> of IQueryable to <strong>gradually build</strong> a query and execute it <strong>in the end</strong>:</p>
+<p><img src="/../imgs/EF/image-20230829142600126.png"></p>
+</li>
+<li><p>A IQueryable can be reused or be used to construct new IQueryable</p>
+<p><img src="/../imgs/EF/image-20230829143104242.png"></p>
+</li>
+</ul>
+<h1 id="Pagination"><a href="#Pagination" class="headerlink" title="Pagination"></a>Pagination</h1><ul>
+<li><p>In EF Core, we can use <strong>skip()</strong> and <strong>take()</strong> methods to achieve pagination </p>
+<p><img src="/../imgs/EF/image-20230829144028549.png"></p>
+</li>
+<li><p>Get total page of a table</p>
+<p><img src="/../imgs/EF/image-20230829144315956.png"></p>
+</li>
+</ul>
+<h1 id="Async-Method-In-EF-Core"><a href="#Async-Method-In-EF-Core" class="headerlink" title="Async Method In EF Core"></a>Async Method In EF Core</h1><ul>
+<li><p>Async methods for EF Core are all in the namespace <strong>Microsoft.EntityFrameworkCore</strong>, so using this namespace before using async EF Core methods </p>
+</li>
+<li><p>Some async methods </p>
+<p><img src="/../imgs/EF/image-20230829150047024.png"></p>
+</li>
+<li><p>There are some methods in EF Core do not have corresponding async methods like <strong>all the non-terminating methods</strong> <code>GroupBy()</code>, <code>OrderBy()</code>, <code>Skip()</code>… The point is: only the <strong>IO related or terminating</strong> method would have their <strong>async methods to optimize their thread behavior</strong></p>
+</li>
+<li><p>async foreach</p>
+<ol>
+<li>use <code>AsAsyncEnumerable()</code></li>
+</ol>
+<p><img src="/../imgs/EF/image-20230829150835383.png"></p>
+<ol start="2">
+<li><p>use <code>ToListAysnc</code> <code>ToArraryAysnc</code></p>
+<p><img src="/../imgs/EF/image-20230829151101580.png"></p>
+</li>
+</ol>
+</li>
+</ul>
+<h1 id="EF-with-SQL-Script"><a href="#EF-with-SQL-Script" class="headerlink" title="EF with SQL Script"></a>EF with SQL Script</h1><ul>
+<li>Insert(Directly execute SQL script in EF Core no longer need <code>save()</code> or <code>saveAsync()</code>, the <strong>SQL injection prevention</strong> is already <strong>embedded</strong> into this method )</li>
+</ul>
+<p><img src="/../imgs/EF/image-20230829152603836.png"></p>
+<ul>
+<li>Instance Query</li>
+</ul>
+<p><img src="/../imgs/EF/image-20230829154158998.png"></p>
+<ul>
+<li>Arbitrary scripts: use <strong>ADO.NET</strong> or Dapper</li>
+</ul>
+<h1 id="Tracking"><a href="#Tracking" class="headerlink" title="Tracking"></a>Tracking</h1><ul>
+<li><p>You can use <code>Entry()</code> method to get the <strong>tracking instance</strong> of an <strong>DB instance</strong>, the <code>State</code> attribute means the <strong>tracking state</strong> of the instance(<strong>unchanged, deleted, updated</strong>), and by <code>DebugView.LongView</code> attribute, we can see the changing information of an DB instance</p>
+<p><img src="/../imgs/EF/image-20230829162427485.png"></p>
+</li>
+<li><p>tracking optimization: sometimes we only need to <strong>query a data without updating, adding or deleting</strong> it. In this case, we can <strong>manually cancel</strong> the tracking to improve program performance by using <code>AsNoTracking()</code>, after that,  the <code>EntityEntry</code>‘s state of that instance would be <strong>detached</strong></p>
+<p><img src="/../imgs/EF/image-20230829162857249.png"></p>
+</li>
+</ul>
+<h1 id="Global-Query-Filter"><a href="#Global-Query-Filter" class="headerlink" title="Global Query Filter"></a>Global Query Filter</h1><ul>
+<li><p>global query filter can be used to achieve <strong>soft delete</strong> and <strong>multi tenancy system</strong></p>
+<p>achieve soft delete: global query filter helps add <strong>soft deleted checking criteria</strong>(in Fluent API config) automatically for every query </p>
+<p><img src="/../imgs/EF/image-20230830192355649.png"></p>
+<p>you can also <strong>exclude the global query filter</strong> for some query by using <code>IgnoreQueryFilters</code>:</p>
+<p><img src="/../imgs/EF/image-20230830200550759.png"></p>
+</li>
+</ul>
+<h1 id="Expression-Tree"><a href="#Expression-Tree" class="headerlink" title="Expression Tree"></a>Expression Tree</h1><ul>
+<li><p>Create and use expression trees</p>
+<p><img src="/../imgs/EF/image-20230831124845329.png"></p>
+</li>
+<li><p>How to <strong>dynamically build</strong> expression tree(equivalent to e1 &#x3D; b &#x3D;&gt; b.Price &gt; 5)</p>
+<p><img src="/../imgs/EF/image-20230831130957720.png"></p>
+</li>
+<li><p><strong>Best Practice of dynamically building expression tree</strong>: using <code>ToString</code> from <code>ExpressionTreeToString</code>(a 3rd party library: <a target="_blank" rel="noopener" href="https://github.com/zspitz/ExpressionTreeToString">https://github.com/zspitz/ExpressionTreeToString</a>) to <strong>generate the code</strong> of an expression tree and then, manually modified that code to build your own expression tree</p>
+<p><img src="/../imgs/EF/image-20230831133514716.png"></p>
+<p><img src="/../imgs/EF/image-20230831133528680.png"></p>
+</li>
+</ul>
+<p><img src="/../imgs/EF/image-20230831135701121.png"></p>
+<ul>
+<li><p><strong>The dynamical building of expression tree is not recommended</strong> </p>
+</li>
+<li><p>Dynamically build query key <strong>without expression tree</strong></p>
+<p><img src="/../imgs/EF/image-20230831144837867.png"></p>
+</li>
+</ul>
 
                 
             </div>
@@ -486,7 +683,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://h4lo343.github.io/2022/12/03/Advanced%20CSS&Sass%2005%20-%20clip%20with%20linear-gradient,%20placeholder%20css%20and%20pseudo%20class,%20inherit%20in%20input%20-%20%E5%89%AF%E6%9C%AC/">https://h4lo343.github.io/2022/12/03/Advanced%20CSS&Sass%2005%20-%20clip%20with%20linear-gradient,%20placeholder%20css%20and%20pseudo%20class,%20inherit%20in%20input%20-%20%E5%89%AF%E6%9C%AC/</a>
+                    <a href="https://h4lo343.github.io/2023/08/25/EF/">https://h4lo343.github.io/2023/08/25/EF/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -524,16 +721,20 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/css/">
-                                    <span class="chip bg-color">css</span>
+                                <a href="/tags/net/">
+                                    <span class="chip bg-color">.net</span>
                                 </a>
                             
-                                <a href="/tags/front-end/">
-                                    <span class="chip bg-color">front-end</span>
+                                <a href="/tags/c/">
+                                    <span class="chip bg-color">c#</span>
                                 </a>
                             
-                                <a href="/tags/SASS/">
-                                    <span class="chip bg-color">SASS</span>
+                                <a href="/tags/back-end/">
+                                    <span class="chip bg-color">back-end</span>
+                                </a>
+                            
+                                <a href="/tags/entity-framework-core/">
+                                    <span class="chip bg-color">entity-framework-core</span>
                                 </a>
                             
                         </div>
@@ -850,13 +1051,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/12/06/Advanced%20CSS&Sass%2006%20-%20radial-gradient,%20ease%20function,%20paragraph%20CSS,%20target%20-%20%E5%89%AF%E6%9C%AC/">
+                <a href="/2023/08/31/ASP.NET%20Core/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.gif" class="responsive-img" alt="Advanced CSS&amp;Sass 06 - radial-gradient, ease function, paragraph CSS, :target">
+                        <img src="/medias/featureimages/6.gif" class="responsive-img" alt="ASP.NET Core">
                         
-                        <span class="card-title">Advanced CSS&amp;Sass 06 - radial-gradient, ease function, paragraph CSS, :target</span>
+                        <span class="card-title">ASP.NET Core</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -867,7 +1068,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-12-06
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-08-31
                         </span>
                         <span class="publish-author">
                             
@@ -884,16 +1085,20 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/css/">
-                        <span class="chip bg-color">css</span>
+                    <a href="/tags/net/">
+                        <span class="chip bg-color">.net</span>
                     </a>
                     
-                    <a href="/tags/front-end/">
-                        <span class="chip bg-color">front-end</span>
+                    <a href="/tags/c/">
+                        <span class="chip bg-color">c#</span>
                     </a>
                     
-                    <a href="/tags/SASS/">
-                        <span class="chip bg-color">SASS</span>
+                    <a href="/tags/back-end/">
+                        <span class="chip bg-color">back-end</span>
+                    </a>
+                    
+                    <a href="/tags/asp-net/">
+                        <span class="chip bg-color">asp.net</span>
                     </a>
                     
                 </div>
@@ -907,13 +1112,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/12/01/Advanced%20CSS&Sass%2004%20-%20background-blend-mode,%20object-fit%20and%20video/">
+                <a href="/2023/07/31/OOP's%20SOLID%20Principles/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.gif" class="responsive-img" alt="Advanced CSS&amp;Sass 04 - background-blend-mode, object-fit and video">
+                        <img src="/medias/featureimages/7.gif" class="responsive-img" alt="OOP&#39;s SOLID Principles">
                         
-                        <span class="card-title">Advanced CSS&amp;Sass 04 - background-blend-mode, object-fit and video</span>
+                        <span class="card-title">OOP&#39;s SOLID Principles</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -924,7 +1129,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-31
                             </span>
                         <span class="publish-author">
                             
@@ -941,16 +1146,16 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/css/">
-                        <span class="chip bg-color">css</span>
+                    <a href="/tags/back-end/">
+                        <span class="chip bg-color">back-end</span>
                     </a>
                     
-                    <a href="/tags/front-end/">
-                        <span class="chip bg-color">front-end</span>
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C#</span>
                     </a>
                     
-                    <a href="/tags/SASS/">
-                        <span class="chip bg-color">SASS</span>
+                    <a href="/tags/OOP/">
+                        <span class="chip bg-color">OOP</span>
                     </a>
                     
                 </div>
