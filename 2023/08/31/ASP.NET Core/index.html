@@ -411,21 +411,21 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2023-09-16
+                    2023-10-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    1.1k
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    7 Min
+                    8 Min
                 </div>
                 
 
@@ -465,10 +465,10 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 </li>
 </ul>
 <h1 id="Header-Cache-in-ASP-NET"><a href="#Header-Cache-in-ASP-NET" class="headerlink" title="Header Cache in ASP.NET"></a>Header Cache in ASP.NET</h1><ul>
-<li><p>By using <code>ResponseCache</code> attribute to an action, ASP.NET will automatically put <code>cache-control:max-age</code> to the <strong>response header</strong>, indicating the browser could cache the <strong>result the the response</strong>(client side cache)</p>
+<li><p>By only using <code>ResponseCache</code> attribute to an action, ASP.NET will automatically put <code>cache-control:max-age</code> to the <strong>response header</strong>, indicating the browser could cache the <strong>result the the response</strong>(client side cache)</p>
 <p><img src="/../imgs/ASP.NET%20Core/image-20230901140653416.png"></p>
 </li>
-<li><p>use server side cache(<code>UseResponseCaching()</code> should be prior to the <code>MapControllers()</code> while after the <code>UseCors()</code>): in this case, server will do the cache for actions <strong>according to their [ResponseCache] setting</strong></p>
+<li><p>use server side cache(<code>UseResponseCaching()</code> should be prior to the <code>MapControllers()</code> while after the <code>UseCors()</code>): in this case, server will also do the cache for actions <strong>according to their [ResponseCache] setting</strong></p>
 <p><img src="/../imgs/ASP.NET%20Core/image-20230901142046086.png"></p>
 </li>
 <li><p>If the browser’s cache is banned, even if there is a <strong>server side cache</strong>, the server will <strong>not use the cache</strong></p>
@@ -691,6 +691,57 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p><strong>JWT withdrawal problem</strong>: JWT put the HTTP state in client side, which will make the withdrawal a bit difficult**(imagine withdraw the former jwt when a user logins in another place**), in this case, we can <strong>add version</strong> to jwt: put a column called <strong>jwt version in</strong> <strong>user table</strong>, every time we issue a jwt, we put that version number into the payload of the jwt, if the received jwt version is smaller than that in database, we <strong>invalidate</strong> that jwt </p>
+<ol>
+<li><p>Add jwt version column to user entity</p>
+<p><img src="/../imgs/ASP.NET%20Core/image-20231006150306988.png"></p>
+</li>
+<li><p>update the jwt version and put it into the payload when user successfully login</p>
+<p><img src="/../imgs/ASP.NET%20Core/image-20231006151605196.png"></p>
+</li>
+<li><p>add filter to check jwt version </p>
+<p><img src="/../imgs/ASP.NET%20Core/image-20231006164128635.png"></p>
+</li>
+</ol>
+</li>
+</ul>
+<h1 id="Host-Service-in-ASP-Net"><a href="#Host-Service-in-ASP-Net" class="headerlink" title="Host Service in ASP.Net"></a>Host Service in ASP.Net</h1><ul>
+<li><p>host services are those services who are not meant to serve user, these services can be counted as host services:</p>
+<ul>
+<li>export data in every day’s 3pm to database </li>
+<li>for every 5 seconds, update 2 tables</li>
+</ul>
+</li>
+<li><p>How to use it:</p>
+<ul>
+<li><p>Create hosted service class</p>
+<p><img src="/../imgs/ASP.NET%20Core/image-20231006170659754.png" alt="image-20231006170659754"></p>
+</li>
+<li><p>Register </p>
+<p><img src="/../imgs/ASP.NET%20Core/image-20231006165839417.png"></p>
+</li>
+</ul>
+</li>
+<li><p>Attention: from .Net 6, the <strong>exception from hosted services</strong> will cause the whole program shut down. Can set <strong>HostOptions.BackgroundServicesExceptionBehavior as ignore</strong> to ignore the exception from hosted services. But it is not recommended, the recommended way is to wrap codes in hosted service in try-catch blocks</p>
+</li>
+<li><p>The hosted service will be injected as <strong>singleton</strong>, so you can not use other <strong>scoped services</strong> inside it, like DbContext. If you must use them, you can create a scope to use it in the hosted service like this:</p>
+<p><img src="/../imgs/ASP.NET%20Core/image-20231007134950564.png"></p>
+</li>
+</ul>
+<h1 id="SIGNALR"><a href="#SIGNALR" class="headerlink" title="SIGNALR"></a>SIGNALR</h1><ul>
+<li><p>How to this it:</p>
+<ol>
+<li><p>Create custom hub class</p>
+<p><img src="/../imgs/ASP.NET%20Core/image-20231007154936331.png"></p>
+</li>
+<li><p>Register the services and path in Program.cs(path should above MapControllers)</p>
+<p><img src="/../imgs/ASP.NET%20Core/image-20231007155022862.png"></p>
+</li>
+<li><p>Open CORS</p>
+<p><img src="/../imgs/ASP.NET%20Core/image-20231007155154318.png"></p>
+</li>
+</ol>
 </li>
 </ul>
 
@@ -1083,18 +1134,17 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2023/08/31/ASP.NET%20Core/">
+                <a href="/2024/03/03/K8S/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.gif" class="responsive-img" alt="ASP.NET Core">
+                        <img src="/medias/featureimages/3.gif" class="responsive-img" alt="K8S">
                         
-                        <span class="card-title">ASP.NET Core</span>
+                        <span class="card-title">K8S</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1104,9 +1154,9 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-31
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-03-03
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1119,24 +1169,15 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
-                    
-                    <a href="/tags/net/">
-                        <span class="chip bg-color">.net</span>
-                    </a>
-                    
-                    <a href="/tags/c/">
-                        <span class="chip bg-color">c#</span>
-                    </a>
                     
                     <a href="/tags/back-end/">
                         <span class="chip bg-color">back-end</span>
                     </a>
                     
-                    <a href="/tags/asp-net/">
-                        <span class="chip bg-color">asp.net</span>
+                    <a href="/tags/devOps/">
+                        <span class="chip bg-color">devOps</span>
                     </a>
                     
                 </div>
@@ -1370,7 +1411,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2022-2023</span>
+                <span id="year">2022-2024</span>
             
             <a href="/about" target="_blank">Joe</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
